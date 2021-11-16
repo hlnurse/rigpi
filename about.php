@@ -189,7 +189,7 @@ $membership->confirm_Member($tUserName);
 	</div>
 	<div class="row">
 		<div class="mx-auto" style="color: white; margin-top:10px; width=400px;">
-			RigPi is a trademark of Howard Nurse.
+			RigPi is a trademark (tm) of Howard Nurse.
 		</div>
 	</div>
 	<div class="row">
