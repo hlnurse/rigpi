@@ -1,0 +1,3 @@
+#!/bin/sh
+MYSQLUSERNAME=ham
+MYSQLPASSWD=7388
