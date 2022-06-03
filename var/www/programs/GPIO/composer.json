@@ -1,5 +1,0 @@
-{
-    "require": {
-        "piphp/gpio": "^0.3.3"
-    }
-}
