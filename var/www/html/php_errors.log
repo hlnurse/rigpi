@@ -1,0 +1,4 @@
+[24-Dec-2021 16:52:24 America/Los_Angeles] PHP Notice:  Undefined variable: level in /var/www/html/programs/reboot.php on line 3
+[24-Dec-2021 16:52:24 America/Los_Angeles] PHP Notice:  Undefined variable: text in /var/www/html/programs/reboot.php on line 3
+[07-Feb-2022 10:32:01 America/Los_Angeles] PHP Notice:  Undefined index: c in /var/www/html/wizardSettings.php on line 6
+[07-Feb-2022 10:32:01 America/Los_Angeles] PHP Notice:  Undefined index: x in /var/www/html/wizardSettings.php on line 7
