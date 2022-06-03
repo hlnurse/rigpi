@@ -1,0 +1,15 @@
+[09-Jul-2021 16:14:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[21-Jul-2021 14:51:00 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:51:30 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:51:31 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:51:32 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[21-Jul-2021 14:51:32 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:51:44 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:53:21 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
+[21-Jul-2021 14:55:06 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13

@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RSS Connections &gt; RigPi Audio</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Audio to and from your radio is used for two-way audio (VoIP) for remote operation or for digital mode programs. &nbsp;Audio can be routed through the RigPi Audio board, an external..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "rigpi-audio.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Audio</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?rigpi-audio.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="rss-connections.html">RSS Connections</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Audio</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rotor-control.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="rss-connections.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="rigpi-keyer.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Audio to and from your radio is used for two-way audio (VoIP) for remote operation or for digital mode programs. &nbsp;Audio can be routed through the RigPi Audio board, an external USB audio soundcard, or through audio CODECs built into many newer radios.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The digital mode programs installed on RigPi use their &quot;default&quot; option for selecting an audio source and destination. &nbsp;The default for RigPi is selected from the device list shown by right-clicking the speaker icon on the Raspberry PI desktop. &nbsp;The RigPi Audio board uses the device named snd_rpi_proto, while most radio CODECs are designated as USB Audio CODEC. &nbsp;Choose the one you want to use.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The instructions below assume you will be using the RigPi Audio board and not an external CODEC.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Audio can be used with VoIP or digital mode and spectrum analyzer programs. RigPi Audio is connected to RSS through the Raspberry Pi GPIO header, is does not connect via USB. Right-click the Speaker icon on the top right end of the RSS Desktop menu bar to confirm that the RigPi Audio driver, snd_rpi_proto, is listed and selected. See the Alsamixer Help Topic if you need to troubleshoot.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you see an entry for audioinjector-pi-soundcard you will need to follow a simple procedure to manually update RigPi. &nbsp;The instructions for making the change are in the RigPi Audio Update topic, Technical section, of this Help..</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:200px;height:auto;"><img alt="panel3a" style="width:100%;height:auto;border:none" src="panel3a.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">RX IN</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Connect the audio out from your radio to the RX IN 3.5mm jack. The tip and sleeve connections are isolated through a transformer to reduce the possibility of hum.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RX IN can be set up to provide a line or microphone input. The default is line input with a maximum of 2-volts peak-to-peak. To accommodate lower level audio sources, the RX IN input can be switched to a microphone level input. This is done using a program called Alsamixer. See the Alsamixer topic in Other Programs to learn how to use Alsamixer.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">TX OUT</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Connect TX OUT to your radio audio input. The tip and sleeve connections are isolated through a transformer to reduce the possibility of hum. The TX OUT ring connection has several purposes. Normally it is used to control the PTT connection on your transmitter. By changing a jumper on the RigPi Audio board you can use it to turn on power to an Elecraft KX-3 radio. As shown below, the jumper JP1 is in the normal PTT position. Connect the jumper between pins 2 and 3 for the KX-3 Power On position.</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:316px;height:auto;"><img alt="0" style="width:100%;height:auto;border:none" src="0.jpg"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The easiest way to connect audio to a radio is through a rear-panel accessory (Data) input jack. Most radios that provide this connection also require PTT at that jack to switch audio input from the front-panel microphone jack to the accessory jack. The PTT connection on the ring of the TX OUT connector can be used for this purpose.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">I/Q IN</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The I/Q input connection provides a way to connect the IQ signal from many radios such as SDR and the Elecraft KX-3 to perform spectral analysis. Similar to &quot;Panadapters&quot; that were available years ago, an I/Q display shows a graph of signal level vs frequency over a wide bandwidth. The bandwidth in RSS is limited to 96 kHz as determined by the sampling rate of the audio chip used.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The I/Q input uses the left and right stereo inputs to the audio chip. The signals are not transformer isolated. Use Alsamixer to make sure RigPi Audio is in the Line Input mode.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">RigPi Audio with Mumble VoIP</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Mumble is software that provides 2-way audio between your radio and a remote device, such as an iPhone or Android mobile phone. &nbsp;A Mumble server (named Murmur) is installed on RSS and always runs in the background. &nbsp;Mumble clients connect to Murmur for passing audio. &nbsp;One Mumble client is installed on RSS and is normally started on the Raspberry Pi desktop when RSS boots. &nbsp;Mumble clients on other devices connect to the same Murmur server where input and output audio is heard by all connected clients.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Mumble client in RSS connects to your radio. &nbsp;Receive audio is fed to the Mumble client input and Mumble client output is fed to the radio mic input. &nbsp;The radio audio is provided to and from Mumble through the RigPi Audio board or a CODEC built in to the radio. &nbsp;If your radio has a built in CODEC for audio, the RigPi Audio board is not used. &nbsp;In this case, audio to and from the radio is carried over the CAT control cable.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Setting up the RigPi Audio Board for VoIP</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Audio can accept audio through a microphone or line input source. &nbsp;If your radio has high output level (no more than 2-volts peak-to-peak) you should use the line input. &nbsp;If your radio audio output is low (no more than 200-mV peak-to-peak), use the microphone input. RSS uses the microphone audio input to start. If you want to use line input, the input selection is made through Alsamixer.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the RX IN connector for audio from the radio and TX OUT for audio to the radio. &nbsp;You can also use a cable customized for your radio from MFJ. &nbsp;The custom cable connects to the RJ-45 connector on the USB/Ethernet end of the RSS cabinet. &nbsp;The left channel is used for input and output. &nbsp;These connections are transformer-isolated.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Audio does not have any onboard adjustments. &nbsp;RigPi Audio levels can be set through Application Menu (1)&gt;Preferences&gt;Audio Device Settings, or through a program called Alsamixer.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Audio Device Settings, use the Playback and Capture tabs to increase or decrease levels.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Alternatively, start Alsamixer from the Terminal window on RSS Desktop. &nbsp;Open Terminal and type:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>alsamixer&lt;return&gt;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:800px;height:auto;"><img alt="alsamixer-snd1" style="width:100%;height:auto;border:none" src="alsamixer-snd1.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Note the following:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_ImageCaption" style="font-style: normal;">Use left/right arrow keys to move between settings</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>Playback options (F3)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Card: snd_rpi_proto (RigPi Audio), use F6 to select</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Master gain set high, use up and down arrow keys to adjust</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Mic Boost set high, use up and down arrow keys to adjust</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>ADC High Pass On, use M key to toggle</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">5.</span>Input Mux Mic, use up/down arrow keys to adjust</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">6.</span>Output Mixer On (OO, use M key to toggle</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">Capture options (F4)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Line [Off, Off], use Spacebar to toggle</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Mic On, use Spacebar to toggle</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Mic Boost (high), up/down arrow keys adjust</p><p class="p_Normal" style="text-indent: 0; padding-left: 80px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Capture (high), up/down arrow keys adjust</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Setting up CODEC audio for VoIP</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Please see the <a href="mumble.html" class="topiclink">Mumble topic</a> for details on using radio CODECs for audio.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Mumble Clients</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">On Windows, Macintosh and iOS, use the client named Mumble. &nbsp;The client for Android devices is named Plumble. &nbsp;They all operate in the same way. &nbsp;Start Mumble (or Plumble) and open the Favorite Servers settings. &nbsp;Click the + button to add a new Favorite.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Complete the Description, Address, Port, Username and Password settings. &nbsp;The Address holds the IP for the Murmur server, the Port defaults to 64738, Username can be your call, and password 7388 (unless you have changed it). &nbsp;The Username MUST be unique. &nbsp;If you have a tablet and phone, both running Mumble, one can use your call as Username and the other must use something like &lt;your call&gt;-1. &nbsp;You can also use phone as a username and tablet as the second username.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Radio Quirks</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Most radios provide audio connections that are straightforward. &nbsp;Some radios, notably Kenwood, can provide audio connections through a Data connection on the rear panel. &nbsp;You will find many more details on the RigPi forum. &nbsp;Use the Search function to look for information in Topics. &nbsp;There are also a number of documents in the Files section that deal with specific radio connections and setups.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;"><span style="font-weight: bold;">Kenwood radios with a Data connector</span></p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">Since the radio normally expects audio to come through the microphone connector, a switch signal must be provided to the Data connector. &nbsp;The switch signal is normally PTT. &nbsp;This means that you must make three connections if you are using the rear panel Data connector: audio in, audio out, and PTT.</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;"><span style="font-weight: bold;">Audio routing determined by menu settings</span></p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">It may be necessary to change menu settings in your radio to provide an audio path through a rear panel connector. &nbsp;Some radios, such as the Yaesu FT-950, only allow transmit audio to pass through the Data connector using the PSK mode.</p>
+<p class="p_Normal" style="margin: 0 0 0 39px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Mumble Settings</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See the Mumble topic in Other Programs for the necessary settings.</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

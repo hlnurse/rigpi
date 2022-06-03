@@ -1,0 +1,22 @@
+    <div class="modal fade" id="myModal" tabindex="0">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+                    <h1 class="modal-title" id="dxcall"></h1><button type="button" class="close" id = "closeModal" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body"></div>
+                <!-- Modal pix -->
+                <div class="mobile-header" id="pixFrame"><img class='modal-pix' height='' width='' src=''></div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+					<h2 class="angle" style="margin-top:4px"></h2>
+					<button type="button" class="btn btn-success" id="rotate" >Rotate</button>
+                    <button type="button" class="btn btn-danger" id="stop" >Stop</button>
+                    <button type="button" class="btn btn-secondary" id="modalClose" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>

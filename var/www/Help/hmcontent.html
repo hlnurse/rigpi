@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>RigPi Station Server Version 2</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { font-size: 1em }
+       .heading1 { color: #000; text-decoration: none; }
+       .heading2 { color: #000; text-decoration: none; }
+       .heading3 { color: #000; text-decoration: none; }
+       .heading4 { color: #000; text-decoration: none; }
+       .heading5 { color: #000; text-decoration: none; }
+       .heading6 { color: #000; text-decoration: none; }
+
+       .hilight1 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight2 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight3 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight4 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight5 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+       .hilight6 { color: #FFFFFF; background: #2C5D88; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+       
+       @media (pointer: coarse) {
+         body    { transform-origin: 0 0;
+		   transform:scale(1.25); 
+		   max-width: 80%;
+       }       
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+   	   var hiTest = /^hilight/im,
+			parentScope = (parent.hmNavigationFrame);
+		if (parentScope) parent.currentNav("toc");
+		$("a[class^='heading']").on("click",function(event){
+			var doSwipe = (hiTest.test($(this).children("span").first().attr("class")) || false || (parentScope && !parent.hmBrowser.nonDeskTouch));
+			if (doSwipe && parentScope) {
+			window.parent.showNav("toggle");
+			}
+			});
+     });
+   </script>
+      <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="introduction.html" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">Introduction</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="welcome-topic.html" target="hmcontent"><span class="heading2" id="s1.1">Welcome to RSS</span></a>
+</li>
+<li class="heading2" id="i1.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="second-topic.html" target="hmcontent"><span class="heading2" id="s1.2">Quick Start Guide</span></a>
+</li>
+<li class="heading2" id="i1.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="whats-new.html" target="hmcontent"><span class="heading2" id="s1.3">What's New</span></a>
+</li>
+<li class="heading2" id="i1.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.4" href="raspberry-pi-desktop.html" target="hmcontent"><span class="heading2" id="s1.4">Raspberry Pi Desktop</span></a>
+</li>
+<li class="heading2" id="i1.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.5" href="universal-functions.html" target="hmcontent"><span class="heading2" id="s1.5">Universal Functions</span></a>
+</li>
+<li class="heading2" id="i1.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.6" href="rss-on-mobile-deviices.html" target="hmcontent"><span class="heading2" id="s1.6">RSS on Mobile Devices</span></a>
+</li>
+<li class="heading2" id="i1.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.7" href="security.html" target="hmcontent"><span class="heading2" id="s1.7">Security</span></a>
+</li>
+<li class="heading2" id="i1.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.8" href="passwords.html" target="hmcontent"><span class="heading2" id="s1.8">Passwords</span></a>
+</li>
+<li class="heading2" id="i1.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.9" href="accounts.html" target="hmcontent"><span class="heading2" id="s1.9">Accounts</span></a>
+</li>
+<li class="heading2" id="i1.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.10" href="acknowlegements.html" target="hmcontent"><span class="heading2" id="s1.10">Acknowlegements</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="rss-connections.html" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">RSS Connections</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="radio-control.html" target="hmcontent"><span class="heading2" id="s2.1">Radio Control</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="rotor-control.html" target="hmcontent"><span class="heading2" id="s2.2">Rotor Control</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="rigpi-audio.html" target="hmcontent"><span class="heading2" id="s2.3">RigPi Audio</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="rigpi-keyer.html" target="hmcontent"><span class="heading2" id="s2.4">RigPi Keyer</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="internet-service.html" target="hmcontent"><span class="heading2" id="s2.5">Internet Connections</span></a>
+</li>
+<li class="heading2" id="i2.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="remote-connections.html" target="hmcontent"><span class="heading2" id="s2.6">Remote Connections</span></a>
+</li>
+<li class="heading2" id="i2.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="using-a-dynamic-dns-service.html" target="hmcontent"><span class="heading2" id="s2.7">Using a Dynamic DNS Service</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="views.html" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Views</span></a>
+<ul id="ul3" style="list-style-type:none">
+<li class="heading2" id="i3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="tuner.html" target="hmcontent"><span class="heading2" id="s3.1">Tuner</span></a>
+</li>
+<li class="heading2" id="i3.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="keyer.html" target="hmcontent"><span class="heading2" id="s3.2">Keyer</span></a>
+</li>
+<li class="heading2" id="i3.3" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="log.html" target="hmcontent"><span class="heading2" id="s3.3" ondblclick="return dblclicked(this)">Log</span></a>
+<ul id="ul3.3" style="list-style-type:none">
+<li class="heading3" id="i3.3.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a3.3.1" href="log-editor.html" target="hmcontent"><span class="heading3" id="s3.3.1">Log Editor</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i3.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="spots.html" target="hmcontent"><span class="heading2" id="s3.4">Spots</span></a>
+</li>
+<li class="heading2" id="i3.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="web.html" target="hmcontent"><span class="heading2" id="s3.5">Web</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="settings.html" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Settings</span></a>
+<ul id="ul4" style="list-style-type:none">
+<li class="heading2" id="i4.1" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="accounts2.html" target="hmcontent"><span class="heading2" id="s4.1" ondblclick="return dblclicked(this)">Account</span></a>
+<ul id="ul4.1" style="list-style-type:none">
+<li class="heading3" id="i4.1.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a4.1.1" href="users.html" target="hmcontent"><span class="heading3" id="s4.1.1">Account Editor</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i4.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="radio.html" target="hmcontent"><span class="heading2" id="s4.2">Basic Radio</span></a>
+</li>
+<li class="heading2" id="i4.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="advanced-radio.html" target="hmcontent"><span class="heading2" id="s4.3">Advanced Radio</span></a>
+</li>
+<li class="heading2" id="i4.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="rotor.html" target="hmcontent"><span class="heading2" id="s4.4">Rotor</span></a>
+</li>
+<li class="heading2" id="i4.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.5" href="keyer2.html" target="hmcontent"><span class="heading2" id="s4.5">Keyer</span></a>
+</li>
+<li class="heading2" id="i4.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.6" href="log-designer.html" target="hmcontent"><span class="heading2" id="s4.6">Log Designer</span></a>
+</li>
+<li class="heading2" id="i4.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.7" href="spots2.html" target="hmcontent"><span class="heading2" id="s4.7">Spots</span></a>
+</li>
+<li class="heading2" id="i4.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.8" href="macros.html" target="hmcontent"><span class="heading2" id="s4.8">Macros</span></a>
+</li>
+<li class="heading2" id="i4.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.9" href="system.html" target="hmcontent"><span class="heading2" id="s4.9">System</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="chapter-2.html" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Other Programs</span></a>
+<ul id="ul5" style="list-style-type:none">
+<li class="heading2" id="i5.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="overview.html" target="hmcontent"><span class="heading2" id="s5.1">Overview</span></a>
+</li>
+<li class="heading2" id="i5.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="alsamixer.html" target="hmcontent"><span class="heading2" id="s5.2">Alsamixer</span></a>
+</li>
+<li class="heading2" id="i5.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="connecting-programs.html" target="hmcontent"><span class="heading2" id="s5.3">Connecting to RSS with External Programs</span></a>
+</li>
+<li class="heading2" id="i5.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="contour-shuttlexpress.html" target="hmcontent"><span class="heading2" id="s5.4">Contour ShuttleXpress</span></a>
+</li>
+<li class="heading2" id="i5.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="fail2ban.html" target="hmcontent"><span class="heading2" id="s5.5">Fail2ban</span></a>
+</li>
+<li class="heading2" id="i5.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.6" href="flarq.html" target="hmcontent"><span class="heading2" id="s5.6">Flarq</span></a>
+</li>
+<li class="heading2" id="i5.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.7" href="fldigi.html" target="hmcontent"><span class="heading2" id="s5.7">Fldigi</span></a>
+</li>
+<li class="heading2" id="i5.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.8" href="flic-switch.html" target="hmcontent"><span class="heading2" id="s5.8">Flic Switch</span></a>
+</li>
+<li class="heading2" id="i5.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.9" href="js8call.html" target="hmcontent"><span class="heading2" id="s5.9">JS8Call</span></a>
+</li>
+<li class="heading2" id="i5.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.10" href="message-aggregator.html" target="hmcontent"><span class="heading2" id="s5.10">Message Aggregator</span></a>
+</li>
+<li class="heading2" id="i5.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.11" href="motion.html" target="hmcontent"><span class="heading2" id="s5.11">Motion (Video)</span></a>
+</li>
+<li class="heading2" id="i5.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.12" href="mumble.html" target="hmcontent"><span class="heading2" id="s5.12">Mumble</span></a>
+</li>
+<li class="heading2" id="i5.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.13" href="mumble-autostart.html" target="hmcontent"><span class="heading2" id="s5.13">Mumble Autostart</span></a>
+</li>
+<li class="heading2" id="i5.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.14" href="panadaptor.html" target="hmcontent"><span class="heading2" id="s5.14">Panadapter</span></a>
+</li>
+<li class="heading2" id="i5.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.15" href="relay-switching.html" target="hmcontent"><span class="heading2" id="s5.15">Relay Switching</span></a>
+</li>
+<li class="heading2" id="i5.16" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.16" href="trustedqsl.html" target="hmcontent"><span class="heading2" id="s5.16">TrustedQSL</span></a>
+</li>
+<li class="heading2" id="i5.17" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.17" href="rss-updater.html" target="hmcontent"><span class="heading2" id="s5.17">Update RSS Files</span></a>
+</li>
+<li class="heading2" id="i5.18" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.18" href="usb-id.html" target="hmcontent"><span class="heading2" id="s5.18">USB ID</span></a>
+</li>
+<li class="heading2" id="i5.19" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.19" href="wsjt-x.html" target="hmcontent"><span class="heading2" id="s5.19">WSJT-X</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon1.png;cicon2.png" style="background:url(cicon2.png) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="technical.html" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Technical</span></a>
+<ul id="ul6" style="list-style-type:none">
+<li class="heading2" id="i6.1" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="definitions.html" target="hmcontent"><span class="heading2" id="s6.1">Glossary</span></a>
+</li>
+<li class="heading2" id="i6.2" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="installing-the-latest-hamlib.html" target="hmcontent"><span class="heading2" id="s6.2">Installing the latest Hamlib</span></a>
+</li>
+<li class="heading2" id="i6.3" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="panels.html" target="hmcontent"><span class="heading2" id="s6.3">Panels</span></a>
+</li>
+<li class="heading2" id="i6.4" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.4" href="programming-code.html" target="hmcontent"><span class="heading2" id="s6.4">Programming</span></a>
+</li>
+<li class="heading2" id="i6.5" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.5" href="raspberri-pi-settings.html" target="hmcontent"><span class="heading2" id="s6.5">Raspberry Pi Settings</span></a>
+</li>
+<li class="heading2" id="i6.6" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.6" href="resetting-rigpi-access.html" target="hmcontent"><span class="heading2" id="s6.6">Resetting RigPi</span></a>
+</li>
+<li class="heading2" id="i6.7" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.7" href="rigpi_local-on-windows-compute.html" target="hmcontent"><span class="heading2" id="s6.7">Rigpi.local on Windows computers</span></a>
+</li>
+<li class="heading2" id="i6.8" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.8" href="rigpi-audio-update.html" target="hmcontent"><span class="heading2" id="s6.8">RigPi Audio Update</span></a>
+</li>
+<li class="heading2" id="i6.9" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.9" href="rigpi-keyer-ptt.html" target="hmcontent"><span class="heading2" id="s6.9">RigPi Keyer PTT</span></a>
+</li>
+<li class="heading2" id="i6.10" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.10" href="rigpi-remote-keyer.html" target="hmcontent"><span class="heading2" id="s6.10">RigPi Remote Keyer</span></a>
+</li>
+<li class="heading2" id="i6.11" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.11" href="scematics.html" target="hmcontent"><span class="heading2" id="s6.11">Schematics</span></a>
+</li>
+<li class="heading2" id="i6.12" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.12" href="sharing-radios.html" target="hmcontent"><span class="heading2" id="s6.12">Sharing Radios, Rotors and Keyers</span></a>
+</li>
+<li class="heading2" id="i6.13" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.13" href="supported-radio-features.html" target="hmcontent"><span class="heading2" id="s6.13">Supported Radio Features</span></a>
+</li>
+<li class="heading2" id="i6.14" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.14" href="system2.html" target="hmcontent"><span class="heading2" id="s6.14">System</span></a>
+</li>
+<li class="heading2" id="i6.15" style="background:url(cicon9.png) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.15" href="troubleshooting.html" target="hmcontent"><span class="heading2" id="s6.15">Troubleshooting</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.png','cicon1.png','cicon9.png');</script>
+</body>
+</html>

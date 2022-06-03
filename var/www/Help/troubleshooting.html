@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Technical &gt; Troubleshooting</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Radio won't connect &nbsp;When you try to connect a radio by using the Connect Radio button and the connection fails, take a close look at the error message to get clues. The normal..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "troubleshooting.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Troubleshooting</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?troubleshooting.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="technical.html">Technical</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Troubleshooting</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="system2.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="technical.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <span class="hmbtnnext"></span>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Radio won't connect</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">When you try to connect a radio by using the Connect Radio button and the connection fails, take a close look at the error message to get clues. The normal failure is &quot;Connection Refused&quot; with a suggestion to check settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">First verify that the radio is on and the USB cable associated with that radio is plugged in to RSS. Check the Port option in SETTINGS&gt;Radio to make sure the radio com port is in the drop-down list.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Try rebooting RSS from SETTINGS&gt;System&gt;Reboot RigPi to see if that fixes it.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Connect Radio and Disconnect Radio buttons on the Tuner window require the radio to be set up in SETTINGS&gt;Radio first. If it hasn't been set up, RSS won't be able to connect. (RigPi is initially configured with a &quot;dummy&quot; radio simulation so you can use Connect Radio with no further settings required.)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you have more than one USB device connected to RSS (several radios, rotor controls or an external WinKeyer), the port assigned to each cable can change when you reboot. What was /dev/ttyUSB0 connected to radio A may now be connected to radio B, and radio A is /dev/ttyUSB1. In SETTINGS&gt;Radio&gt;Port you can select another port to see if the radio will connect.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RSS has a utility program that will prevent port changes from happening in the future. See the Help topic Other Programs&gt;<a href="usb-id.html" class="topiclink">USB ID</a> for more information on USB ID.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Next try starting the rig connection manually. This requires the use of the Raspberry Pi Desktop Terminal. The manual connection uses the Hamlib model number for your radio. In SETTINGS&gt;Advanced Radio click the Radio Capabilities button. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="r-cap" width="205" height="149" style="margin:0 auto 0 auto;width:205px;height:149px;border:none" src="r-cap.png"/></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="r-cap-list" width="275" height="267" style="margin:0 auto 0 auto;width:275px;height:267px;border:none" src="r-cap-list.png"/></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal">At the top you will see 'Caps dump for model: xxx,' where xxx is the model number. Make note of this number.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To clear any radio control remnants, reboot RSS from the System Settings window.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Open Terminal by double-clicking the black prompt icon in the Raspberry Pi Task Bar and type the following (373 happens to be the model number for the Icom IC-7300):</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>rigctl -m 373 -r /dev/ttyUSB0</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">This command assumes you have made no changes to the default settings in the radio. &nbsp;If you have changed Baud rate to 115,200, use this command:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>rigctl -m 373 -r /dev/ttyUSB0 -s 115200</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The resultant report should give more clues, which might simply be &quot;Timed out.&quot; More diagnostic information can be obtained by using the &quot;v&quot; parameter such as below:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>rigctl -m 214 -r /dev/ttyUSB0 -vvvvv</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"> If nothing is learned, we need to check that the port is correct. Get a list of available ports by typing (lower-case L):</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>ls /dev/ttyU*</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If more than one USB port is listed, try the rigctl commands with the other ports.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Once you are able to get rigctl started, a prompt &quot;Rig command:&quot; is shown. Type f followed by Enter and see if the reported frequency is correct. Type Ctrl+C to exit and stop the rigctl process.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you are able to connect to and control the radio, we can start the RigPi using a special test mode. Starting the test requires that a file in RigPi be edited with a text editor. This can be done from RSS Terminal using the Nano text editor with these commands:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>cd /var/www/html</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>sudo nano RigDo.php</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Near the top you will see a line that reads &quot;$tUser=$argv[1];&quot; which we need to modify. Use the cursor arrow keys to move the insertion point to the front of $argv, then enter the characters 1;//.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Slightly further down, after &quot;}else{,&quot; you need to change the variable $tUsername='admin'; so that is shows your username.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Type Ctrl+O to save the file and Ctrl+X to exit Nano.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start hamlibDo by typing this line:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>php hamlibDo.php</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See if there are any error reported. If there don't appear to be any errors, open a RigPi browser and see if you can control the radio.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The report shown in Terminal includes the command to start rigctld. Try entering the complete line in Terminal and press Enter. See if there are any error reported.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If none of these steps gets the radio connected, it is time to check the USB cable and radio for problems. This can be done running a control program on another computer by moving the USB cable to that computer.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For a helpful guide providing additional information, here is a link to the Hamlib FAQ:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><a href="https://github.com/Hamlib/Hamlib/wiki/FAQ" target="_blank" class="weblink">Hamlib FAQ</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Radio Control Logging</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Test Radio function in Advanced Radio settings also starts a log for recording radio status and commands. &nbsp;You will find this log in /var/log/rigpi_radio.log. &nbsp;It is cleared each time you use the Test Radio function so only the most recent session is kept. &nbsp; You can use the edit program nano from the Raspbberry Pi terminal to view the log.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>sudo nano /var/log/rigpi-radio.log</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Rotor Control Logging</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Test Radio function in Advanced Radio settings also starts a log for recording rotor status and commands. &nbsp;You will find this log in /var/log/rigpi_rotor.log. &nbsp;It is cleared each time you use the Test Radio function so only the most recent session is kept. &nbsp; You can use the edit program nano from the Raspbberry Pi terminal to view the log.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>sudo nano /var/log/rigpi-rotor.log</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">User Access Logging</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A log of all users accessing RigPi can be found here:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>sudo nano /var/log/rigpi-access.log</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">No RigPi Audio</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi uses the RigPi Audio board for VoIP, digital modes, or even for a spectrum analyzer (panadapter). If RigPi Audio doesn't appear to be working, there are a number of tests we can use to isolate the problem.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Audio can receive/send audio through the RJ-45 connector on the USB end of the RigPi unit or from the 3.5 mm jack end. We will use the 3.5 mm jack end. If using the RJ-45 connection, remove that cable for now.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Audio uses a Linux device driver named snd_rpi_proto. All drivers and settings required for RigPi Audio are initially set and do not require changes.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Right-click the Speaker icon at the top of RSS Desktop to make sure snd_rpi_proto is shown as the selected device. If it isn't in the list, try rebooting RSS from the RigPi SETTINGS&gt;System menu. If it fails to appear, the RigPi Audio board may have a problem.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To look for errors on booting, open RSS Terminal and type the following:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>dmesg | grep audio</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You will see a list of possible errors. The last line should say </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">[ &nbsp;4.xxxxx] snd-rpi-proto soc:sound: wm8731-hifi &lt;-&gt; 3f203000.i2s mapping ok</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">which says the board is connected. If not, the RigPi Audio board probably needs repair.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Next we will try some audio tests using Linux programs through RSS Terminal.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Plug in a high impedance set of ear buds to the TX OUT connector. Type the following command (c2 says 2 channels):</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>speaker-test -c2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You should hear pink noise in the left ear bud, then silence, followed by pink noise.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Here is a tone test:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>speaker-test -t sine -f 2000 -c2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You will hear a 2000 Hz tone in the left ear bud.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Finally, a voice test:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>speaker-test -t wave -c2</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You will hear a woman's voice in the left ear bud.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If any of these test fail, we can use the Linux program named Alsamixer from RSS Terminal to check the settings. Type</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>alsamixer</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following settings are used for RigPi Audio:</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:800px;height:auto;"><img alt="alsamixer-snd1" style="width:100%;height:auto;border:none" src="alsamixer-snd1.png"/></div></div>
+<p class="p_Normal" style="margin: 0 0 0 143px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 143px;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:300px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Master Gain</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">86&lt;&gt;86 (adjust to suit)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Master Playback</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">OFF (MM)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Sidetone</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">0</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Mic Boost</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">0</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Playback Deemphasis</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">OFF (MM)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">ADC High Pass Filter</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">ON (OO)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Input Mux</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Line In</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Output Mixer HiFi</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">ON (OO)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:90%;max-width:1972px;height:auto;"><img alt="Screen Shot 2019-06-19 at 5.22.16 PM" style="width:100%;height:auto;border:none" src="hmfile_hash_9f65b089.png"/></div></div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:300px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Line</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">L R Capture</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Mic Boost</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">0</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Capture</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">18&lt;&gt;18 (adjust to suit)</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 0 143px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Can't connect to Mumble server</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Mumble server starts automatically when RigPi boots. First we can make sure Mumble server is actually running, then we'll check the Mumble log.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To confirm the Mumble is running:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Terminal, type: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>ps -ef | grep mumble-server</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The command should show:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>mumble-+ &nbsp;582 &nbsp; 1 0 12:22 ? &nbsp; &nbsp;00:00:00 /usr/sbin/murmurd -ini /etc/mumble-server.ini</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The results confirm that the murmur (mumble server) daemon is running, using the mumble-server.ini initialization file.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">To make sure we can connect to the default Mumble port, type: </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>nc -vz rigpi2.local 64738</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You should see this response:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>Connection to rigp2i.local 64738 port [tcp/*] succeeded!</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If these tests are successful, we can check the Mumble server log. Type:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span>sudo cat /var/log/mumble-server/mumble-server.log</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Here is the response:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">...</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:25.792 Initializing settings from /etc/mumble-server.ini (basepath /etc)</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:25.815 Meta: TLS cipher preference is &quot;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:AES256-SHA:AES128-SHA&quot;</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:25.815 OpenSSL: OpenSSL 1.1.0j 20 Nov 2018</p>
+<p class="p_Normal">&lt;C&gt;2019-01-23 12:22:25.850 Successfully switched to uid 116</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:28.784 ServerDB: Opened SQLite database /var/lib/mumble-server/mumble-server.sqlite</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:28.814 Resource limits were 0 0</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:28.814 Successfully dropped capabilities</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:33.835 OSInfo: Failed to execute lsb_release</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:37.123 Murmur 1.2.18 (1.2.18-1) running on X11: Linux 4.14.79-v7+: Booting servers</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:22:45.343 1 =&gt; Server listening on [::]:64738</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:23:32.814 1 =&gt; Announcing server via bonjour</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:23:33.002 1 =&gt; Registration needs nonempty 'registername', 'registerpassword' and 'registerurl', must have an empty 'password' and allowed pings.</p>
+<p class="p_Normal">&lt;W&gt;2019-01-23 12:23:33.003 Object::connect: No such slot MurmurDBus::userTextMessage(const User *, const TextMessage &amp;)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If connection attempts have been made they are included at the end of the log. Check these line for an indication of why the connection was not made.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Mumble gives access to more settings through an account named SuperUser. Try logging in using that username with password 7388.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Finally, visit the Mumble Help pages to additional help. Here is a link to the instructions for logging into a Mumble server:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><a href="https://www.mumble.com/support/how-to-connect-to-a-mumble-server.php" target="_blank" class="weblink">Mumble Help</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">RigPi Audio Input Level Too Low</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi audio can be high level line-input of up to 2-volts peak-to-peak, or low level microphone input (200-mv peak-to-peak). In addition, the input levels can be adjusted. These settings are done through Alsamixer. See the Alsamixer topic in Other Programs.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

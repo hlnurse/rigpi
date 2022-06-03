@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RSS Connections &gt; Radio Control</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="RigPi controls each radio through one of the four USB connectors on the Raspberry Pi. &nbsp;If your radio has a classic serial port, a serial-to-USB adapter is required. &nbsp;Older Icom..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "radio-control.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Radio Control</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?radio-control.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="rss-connections.html">RSS Connections</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Radio Control</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rss-connections.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="rss-connections.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="rotor-control.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">RigPi controls each radio through one of the four USB connectors on the Raspberry Pi. &nbsp;If your radio has a classic serial port, a serial-to-USB adapter is required. &nbsp;Older Icom radios provide CAT through a CI-V system. &nbsp;A CI-V to USB adapter is required. &nbsp;Most newer radios use a USB connection for CAT control so no adapter is needed.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you are using ADMIN as your callsign you can use the Express Radio Settings window to configure the radio connection. Normally you will use SETTINGS&gt;Radio&gt;Basic or SETTINGS&gt;Radio&gt;Advanced. &nbsp;Advanced settings may be necessary if you have changed any of the default settings on your radio. &nbsp;If not, Basic settings will work best.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Basic settings, select the Manufacturer, Model and Port from the drop-down menu lists. &nbsp; If the radio USB cable is the only one plugged in, the port will usually be /dev/ttyUSB0. &nbsp;Click the Connect Radio button.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For radios that connect via a USB cable, the long name for the connection may appear in the port drop down list. &nbsp;Select the long name to provide persistence after a reboot.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If the radio doesn't connect, please see the Radio&gt;Advanced topic in the Settings section of this Help for troubleshooting support.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Power On/Off</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Most radios are able to be powered on and off by means of special CAT commands. &nbsp;Use the PWR ON/PWR OFF macros to turn your radio on and off. &nbsp;The power on commands are also sent to the radio when you use the Connect Radio button and the radio is not turned on already. &nbsp;The power on cycle can take up to 40 seconds for some radios.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Connecting to a Radio through a TCP port</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">It is possible to connect to a radio through an Internet connection rather than through a USB port. &nbsp;For example, your radio may accept an Ethernet connection for CAT control, or you may be using a serial-to-Ethernet or serial-to-Wi-Fi adapter.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">For an Ethernet connection, enter the IP and port in the Port box in Radio Settings. &nbsp;If I had a radio connected to 192.168.1.80, port 4999, I would type the following in the Port box:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">192.168.1.80:4999</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal">You must type this information into the box, it does not appear in the drop-down list for Port options. &nbsp;When you save the Radio settings, the IP:Port value is saved.</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

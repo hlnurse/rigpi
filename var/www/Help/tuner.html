@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Views &gt; Tuner</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="1: Navigation Bar &nbsp;Navigate to https://www.rigpi.net by clicking the RigPi logo or RigPi name. TUNER...WEB: opens window. SETTINGS: contains a list of settings windows, click" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "tuner.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Tuner</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?tuner.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="views.html">Views</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Tuner</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="views.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="views.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="keyer.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal" style="text-align: center;"><img alt="iPad-callout-2A" width="670" height="506" style="margin:0 auto 0 auto;width:670px;height:506px;border:none" src="ipad-callout-2a.png"/></p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">1: Navigation Bar</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Navigate to <a href="https://www.rigpi.net" target="_blank" class="weblink">https://www.rigpi.net</a> by clicking the RigPi logo or RigPi name.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>TUNER...WEB: opens window.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>SETTINGS: contains a list of settings windows, click the down-arrow.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Search box: enter call to look up in the FCC database or optional QRZ XML online service. Press enter or click the magnifying glass to look up.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Exit RigPi.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">2: Tuning Knob</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:80%;max-width:348px;height:auto;"><img alt="2-TuningKnob" style="width:100%;height:auto;border:none" src="2-tuningknob.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Tap/click the detent and rotate knob to tune higher/lower in frequency. The tuning scale is determined by the underlined digit in the frequency readout of the Frequency Panel.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Tap/click/hold the plus or minus button to move up or down in frequency. Hold tunes in the same direction at the rate of 2 steps per second.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Tap/click/ the PTT button to engage the RSS PTT function The PTT button operates in a toggle mode is a toggle. Tap/click again to go into receive.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="LEDs" width="278" height="237" style="margin:0 auto 0 auto;width:278px;height:237px;border:none" src="leds.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">When using the Macro Decimal mode to control external relays, a row of LED lights appears below the Tuning Knob. &nbsp;Tap/click a light to turn on an associated relay, tap/clik again to turn it off. &nbsp;One slave connection is available for all accounts. &nbsp;If you attempt to connect more than one RigPi will show an alert telling which account is already using the slave connection. &nbsp;A radio must be connected before relays can be controlled.</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">3: Macro Bank</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>128 macros with 4 banks of 32 programmable macro buttons (SETTINGS&gt;Macros). Can be used to send CW, control the radio through Hamlib commands, control the radio through Hamlib &quot;w&quot; commands unique to the selected radio, and system commands (the system command option is disabled by default). &nbsp;Change the Macro Bank using the Macro Bank button (10) or a custom macro.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">4: Status Bar</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Main frequency (shows red when no radio connected)</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Split frequency (shows when radio is in the split mode)</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Mode</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>User, user's call and account username</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>UTC Time</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Only Main Frequency is displayed in narrow screens</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">5: Sliders</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Sliders are hidden if your radio doesn't support changing levels by CAT.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>4 sliders are provided: AF (AF Level); RF (RF Gain); PWR (Power Output Level); MIC (Mic Level).* &nbsp;The sliders adjust the radio front panel controls, not the CODECs (if appropriate for your radio) or Mumble.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 26px;"><span style="font-size: 11px;">*If you find your radio is not responding correctly to sliders, analog level reading for that radio may not be fully implemented. &nbsp;In addition, some radios only support several fixed levels for a slider rather than a continuous range. &nbsp;Please post a note on the RigPi Forum to let us know of any problems you encounter.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">6: Band and Mode</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Tap a Band button to change bands or a Mode button to change modes. Each band has a memory for the frequency last used on that band.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">7: Radio Connection and VFO</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:378px;height:auto;"><img alt="TunerVFO1" style="width:100%;height:auto;border:none" src="tunervfo1.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Connect Radio (Green: connected; Red: not connected; Rotating Arrows: connecting)</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Disconnect Radio</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>VFO/Memory operations</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>See below for details</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">8: Frequency Panel</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:398px;height:auto;"><img alt="Freq1" style="width:100%;height:auto;border:none" src="freq1.png"/></div></div>
+<p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-style: normal;">When screens are wide enough to display the RSS S-meter, the frequency panel, above, is used.</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:393px;height:auto;"><img alt="Freq-small2" style="width:100%;height:auto;border:none" src="freq-small2.png"/></div></div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-style: normal;">For narrow screens, where the S-meter is hidden, this format is used.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Displays the Main and Sub VFO frequencies, band, the current UTC time, operating mode and receive/transmit status. </p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>A keypad is included to set the frequency of selected digits. See below for all tuning options.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The Main and Sub frequencies have bars above and below each digit. When a digit is selected the bars above and below the digit are bold. Tap/Click a digit to select it. The selected digit sets the tuning resolution for the Knob and typed digits. Click the lower half of a digit after selection to tune down and the upper half to tune up.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Change the color theme of the Frequency Panel using Account Settings (SETTINGS&gt;Accounts&gt;Edit). Four options are provided: Orange, Night, LCD, and High Contrast. This setting also affects the S-Meter.<br />
+&nbsp;</p><div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:middle; width:83px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Callout</span></p>
+</th>
+<th style="vertical-align:middle; width:316px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Use</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">1</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Information for Main VFO</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">2</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Current band</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">3</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Time (GMT)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">4</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Main frequency</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">5</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Mode and transmit/receive status</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">6</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Sub VFO information</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">7</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Keypad for entering digits</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">8</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Sub label and radio name</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">9</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">Tap to open keypad</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:83px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">10</p>
+</td>
+<td style="vertical-align:top; width:316px; padding:10px; border:none"><p class="p_Normal">S-meter</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">9: S-Meter</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Shows signal strength when in receive and an optional reading when in transmit. There is no way to adjust the calibration of the S-meter. Some radios may not support S-meter and/or optional transmit queries through CAT. The S-meter is not shown on narrow screens. See the Advanced Radio settings (SETTINGS&gt;Radio&gt;Advanced) for more information on the optional transmit readings.</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Change the color theme of the S-meter using Account Settings (SETTINGS&gt;Accounts&gt;Edit). Four options are provided: Orange, Night, LCD, and High Contrast. This setting also affects the Frequency Panel.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">10: Accessory Buttons</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Macro Bank to change the displayed bank</p><p class="p_Normal" style="text-indent: 0; padding-left: 52px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Knob Lock to freeze the tuning knob.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Radio Connection and VFO Buttons</span></p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:378px;height:auto;"><img alt="TunerVFO1" style="width:100%;height:auto;border:none" src="tunervfo1.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:142px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Button</span></p>
+</th>
+<th style="vertical-align:top; width:620px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Function</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Connect Radio</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Connect the radio for this account. You must set the radio up the first time in SETTINGS&gt;Radio. Green: connected; Red: not connected; Rotating Arrow: connecting. &nbsp;The control will turn on radio power before connecting if the radio is off (supported radios only).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Disconnect Radio</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Disconnect the radio for this account.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">A&gt;B</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Copy the Main frequency to the Sub frequency.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">A&gt;M</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Copy the Main frequency to the RSS frequency memory. This function does not use the memory in the radio.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">M&gt;A</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Copy the frequency in the RSS memory to the Main VFO</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">A&lt;&gt;B</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Swap the Main and Sub VFO frequencies.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:142px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">SPLIT</p>
+</td>
+<td style="vertical-align:top; width:620px; padding:10px; border:none"><p class="p_Normal">Turn on split for the radio. The Main VFO is used for receiving and the Sub VFO is used for transmitting. Some Hamlib radios do not support slit operation. Others cause readout flicker when reading or setting split frequency. Split polling can be turned off in Radio settings (SETTINGS&gt;Radio&gt;Advanced).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Frequency Tuning</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Tuning options allow you to tune both Main and Sub VFO's in many ways.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:middle; width:141px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Option</span></p>
+</th>
+<th style="vertical-align:middle; width:476px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Operation</span></p>
+</th>
+<th style="vertical-align:middle; width:145px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Mobile Device Support</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Knob</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Rotate to tune up or down. Click a digit to set resolution.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Knob +</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Tune up one step, determine resolution by clicking a digit.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Knob -</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Tune down one step, determine resolution by clicking a digit.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Click digit</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Click digit to select, then click upper half to tune up or lower half to tune down.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Mouse wheel (or Shift+Mouse wheel)</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Rotate to tune up or down, click digit to set resolution.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard &gt;</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Move selection to next digit to right.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard &lt;</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Move selection to next digit to left.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard ^</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Tune selected digit up.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard <span style="font-family: 'Segoe UI Symbol';">˅</span></p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Tune selected digit down.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard [</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Down one band</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Keyboard ]</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Up one band</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Type frequency</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Select starting digit, then type new frequency.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Type frequency (2)</p>
+</td>
+<td style="vertical-align:top; width:476px; padding:10px; border:none"><p class="p_Normal">Tap/click starting digit, then tap/click numbers in the keypad.</p>
+</td>
+<td style="vertical-align:top; width:145px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Push-to-Talk</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Several ways to engage Push-to-Talk (PTT) are provided. PTT uses CAT and solid state switches on the RigPi Keyer and RigPi Audio boards. See SETTINGS&gt;Radio&gt;Advanced for PTT hardware options. See also Keyer settings for alternative ways to use the RigPi Keyer board PTT.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:middle; width:141px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Option</span></p>
+</th>
+<th style="vertical-align:middle; width:473px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Operation</span></p>
+</th>
+<th style="vertical-align:middle; width:148px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Mobile Device Support</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">PTT to right of Tuning Knob</p>
+</td>
+<td style="vertical-align:top; width:473px; padding:10px; border:none"><p class="p_Normal">Latch PTT</p>
+</td>
+<td style="vertical-align:top; width:148px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">T/R Macro button</p>
+</td>
+<td style="vertical-align:top; width:473px; padding:10px; border:none"><p class="p_Normal">Latch PTT</p>
+</td>
+<td style="vertical-align:top; width:148px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Yes</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:141px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Spacebar</p>
+</td>
+<td style="vertical-align:top; width:473px; padding:10px; border:none"><p class="p_Normal">Latch PTT</p>
+</td>
+<td style="vertical-align:top; width:148px; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">No</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

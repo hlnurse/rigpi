@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Settings &gt; Keyer</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The CW Keyer Settings window is used for the RigPi Keyer, or external K1EL WinKeyer. These settings do not affect keying via CAT except for Speed. Once you have entered new..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "keyer2.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Keyer</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?keyer2.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="settings.html">Settings</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Keyer</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rotor.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="settings.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="log-designer.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">The CW Keyer Settings window is used for the RigPi Keyer, or external K1EL WinKeyer. These settings do not affect keying via CAT except for Speed. Once you have entered new settings you can test the keyer by clicking the Test Keyer button.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">The RigPi Keyer can be assigned to one account. Additional accounts can use keying via CAT or WinKeyer. There are no limits to the use of the via CAT option or to the number of external WinKeyers.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Remote Keyer provides a way to key your radio from a remote location using a paddle, bug, or straight key. RigPi CW Keyer boards are required at both ends. &nbsp;The Remote CW Keyer board provides speed control and sidetone. &nbsp;CW characters are sent by UDP data packets. &nbsp;Each packet contains the start or end time for a CW element. &nbsp;The timing is used to reconstruct the CW elements at the Radio RigPi to key your transmitter.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">A simplified version of RigPi is available for Remote Keyer. &nbsp;This minimized RigPi version can be loaded on a Raspberry Pi 0 W or any Raspberry Pi from version 3 up.</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:80%;max-width:578px;height:auto;"><img alt="2-Keyer" style="width:100%;height:auto;border:none" src="2-keyer.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Most settings options use a drop-down list of options. Click the down arrow on the right end of an option that uses a list from which to choose. Click the option you wish to set and that option appears in the settings box. &nbsp;Boxes that are filled from drop down lists are gray since they cannot be filled manually.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">RigPi Keyer and WinKeyer options</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Notes below are adapted from K1EL's WinKeyer3 IC data sheet.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><a href="http://k1el.tripod.com/files/WK3_Datasheet_v1.pdf" target="_blank" class="weblink">Click to see WinKeyer Data Sheet</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:195px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Function</span></p>
+</th>
+<th style="vertical-align:top; width:108px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Label</span></p>
+</th>
+<th style="vertical-align:top; width:477px; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Notes</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer Speed (WPM)</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Speed</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><br />
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Paddle Keying Mode</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Paddle Md</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">RigPi Keyer supports iambic A, B, Ultimatic, and Bug keying modes. In iambic mode, RigPi Keyer sends dits and dahs automatically based on which paddle you press. In bug mode RigPi Keyer sends the dits and you manually send the dahs. You also can use bug mode to operate in straight key mode or if you want to key through RigPi Keyer with a different keyer, simply set bug mode and use the dah input to key RigPi Keyer.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer Sidetone (Hz)</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Sidetone</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">The sidetone frequency is continuously adjustable between 500 and 4000Hz</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer Weight</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Weight</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">A value of 50 selects no weighting adjustment. Values less than 50 reduce weighting and values greater than 50 increase weighting. Note that weighting does not affect sending speed because any increase in keyed time is subtracted from spacing time. Reduction in weighting results in a thinner sounding keying while increased weighting results in a heavier sound. Since weighting tracks speed, a given weighting will sound the same at all speeds.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer PTT Lead-In Time</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Leadin</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">RigPi Keyer provides a transmitter PTT output for each key output that can be used to switch a transmitter or linear amplifier over to transmit mode in advance of actual CW keying. You have control over the time delay between when PTT is asserted and when CW keying starts, this is lead-in. You also have control over how long the transmitter will stay in transmit after keying has stopped. The Tail setting determines the delay used for CW sent by an internal message or CW sent by RigPi.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer PTT Tail Time</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Tail</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">See Keyer PTT Lead-IN Time, above</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Speed Pot minimum WPM</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Min WPM</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Min WPM and WPM Range set the limits for the speed pot. Min WPM sets the lowest value returned; WPM Range indirectly specifies the maximum value returned. For example if Min WPM=10 and WPM Range=15, the full pot swing values, min to max, would be 10 to 25 WPM. Note that the max value is Min WPM+WPM Range.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Speed Pot WPM range</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">WPM Rng</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">See Min WPM, above</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer Keying Compensation</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Comp</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Keying Compensation allows a fixed amount to be added to the length of all dits and dahs. QSK keying on modern transceivers can cause shortening of dit and dah elements which is especially noticeable at high speeds. RigPi Keyer can compensate for the shortening by adding a uniform length to each dit and dah element. The adjustments are made in one-millisecond steps and the maximum adjustment allowed is 250 m Secs. Key compensation is very similar to Weighting in that an adjustment added to a dit or dah is then subtracted from the spacing between them so the overall speed is not changed. The difference between weighting and compensation is that compensation is independent of speed, so if 10 m sec of key compensation is selected, 10 m sec will be always be added regardless of speed. Be aware that at high speeds, large values of key compensation can reduce inter-element space to zero.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Slow CW Farnsworth maximum speed</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Farns</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Farnsworth spacing is useful for CW practice because it encourages you to learn characters by sound not individual dits and dahs. When Farnsworth is enabled, letters are sent at a fixed rate of nn WPM while spacing between characters is determined by the sending WPM rate. When the WPM rate is set above the Farnsworth WPM, Farnsworth is automatically disabled.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; height:282px; padding:10px; border:none"><p class="p_Normal">Paddle timing</p>
+</td>
+<td style="vertical-align:top; width:108px; height:282px; padding:10px; border:none"><p class="p_Normal">Paddle</p>
+</td>
+<td style="vertical-align:top; width:477px; height:282px; padding:10px; border:none"><p class="p_Normal">This setting controls when RigPi Keyer will start looking for a new paddle press after sensing the current one. If there is not enough delay, the keyer could send unwanted dits or dahs. If there is too much delay, the operator is held back because they can't paddle ahead. The default value is one dit time (50) and is adjustable in percent of a dit time. Faster operators report a setting somewhat less than default is optimal. If the paddle sensitivity is set to zero, dit and dah paddle memory is disabled.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Dot/Dash ratio</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Ratio</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Modifies the ratio of dit time to dah time. Standard ratio is 1:3 (dit:dah) when ratio = 50. The formula to determine dah/dit ratio is: DAH/DIT = 3∗(ratio/50). A value of 50 selects 1:3, a value of 33 would select 1:2, and a value of 66 would select 1:4. This causes an intentional distortion of the Morse waveform. Some ops use this option to make their CW sound less “machine like” but a little goes a long way!</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Turn sidetone on/off</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Enable Sidetone</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Enable the RigPi Keyer sidetone for paddle and RigPi keying.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer PTT mode</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Enable Keyer PTT</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Keyer PTT is turned on when the WinKeyer IC sends CW. To re purpose the WinKeyer IC PTT so it can set PTT independently (through programmable Macros), remove the Enable Keyer PTT check.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Left/right paddle swap</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Swap Paddles</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Reverse the dit/dah paddle control. Useful for left handed operation.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Keyer sending autospace</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">AutoSpace</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Autospace works in the following way: If you pause for more than one dit time between a dit or dah, RigPi Keyer will interpret this as a letter-space and will not send the next dit or dah until the full letter-space time has been met. The normal letter-space is 3 dit spaces. RigPi Keyer has a paddle event memory so that you can enter dits or dahs during the inter-letter space and RigPi Keyer will send them as they were entered. With a little practice, autospace will help you to send near perfect Morse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Contest spacing</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">CT Space</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Shortens the time between characters by one dit space.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Control Keyer Watchdog</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Disable Watchdog</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">RigPi Keyer has a paddle watchdog counter that disables the key output after 128 consecutive dits or dahs. RigPi Keyer assumes that this is an unintended condition and keying outputs are turned off. Sidetone remains on to alert the user. Paddle watchdog is on by default but it can be turned off by setting this mode bit.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Use PTT for other applications</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">PTT ON when Radio Connected</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Forces PTT to turn on when a radio is connected and under control. This is useful for antenna bypass switches and similar applications. See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Reset Defaults</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Reset Defaults</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Restores the original RigPi Keyer default values.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Test Keyer</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Test Keyer</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Sends two 'V' characters.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Remote Keyer Function</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Keyer Fn</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Selects Keyer mode. Options are Normal, Radio Keyer, Remote Keyer. Normal is used when you are not using Remote Keyer. &nbsp;Select Radio Keyer for the RigPi controlling your radio. &nbsp;Select Remote Keyer to use a paddle, bug, or straight key from a remote location.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Remote Keyer Port</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Port</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">The UDP port used by the Radio RigPi to listen for a connection from Remote Keyer. &nbsp;This setting only appears for the Remote Keyer or Radio Keyer RigPi. The default port is 30040.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Remote Keyer Radio RigPi IP</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">IP</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">The IP for the Radio RigPi when using Remote Keyer. This setting only appears for the Remote Keyer RigPi.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:195px; padding:10px; border:none"><p class="p_Normal">Invert Remote Keying</p>
+</td>
+<td style="vertical-align:top; width:108px; padding:10px; border:none"><p class="p_Normal">Invert Keying</p>
+</td>
+<td style="vertical-align:top; width:477px; padding:10px; border:none"><p class="p_Normal">Inverts the keying when using an exterrnal electronic key. &nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Keyer PTT</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p>RSS has “Normal PTT” and “Keyer PTT.” Normal PTT is what you expect when you tap PTT on the Tuner window, push-to-talk. Keyer PTT can be used for other purposes.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>Normal PTT from the Tuner PTT or macro switches does two things. It sends the CAT PTT command to the radio and simultaneously controls the hardware switches on the Keyer and Audio boards. The Keyer PTT switch goes from tip to sleeve (grounded) on the Keyer PTT connector while on the Audio board it goes from ring to sleeve (not grounded).</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>There is an alternate way to control Keyer PTT on the Keyer board. This alternate PTT is controlled by the K1EL WinKeyer3 IC. When PTT is “enabled” in Keyer settings, this PTT operates whenever there is outgoing CW. You can set the lead-in delay and tail delay to take care of amplifier switching. When PTT is “disabled” in Keyer settings, you can control the WinKeyer3 IC PTT through software. This latter control can be is used by a macro and by the “PTT when radio connected” option in Keyer settings.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>Keyer PTT and RigPi PTT always engage the PTT on the Keyer board. Since RSS doesn’t know when the CW Keyer is sending CW, the “PTT enabled” Keyer PTT is the only way to control the radio or amplifier if switching is necessary. If that switching isn’t necessary, “disabled” Keyer PTT can be used for other purposes.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 19px; font-weight: bold;">Remote Keyer Connections</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>A paddle, bug or straight key is connected to Remote Keyer through the PADDLE connector. &nbsp;If using a bug or straight key, the Remote Keyer Paddle Mode (Paddle Md) must be changed to Vibrobug. &nbsp;The tip of the PADDLE connector is shorted to ground to key Remote Keyer which is then passed to the Radio RigPi.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>See <a href="rigpi-remote-keyer.html" class="topiclink">RigPi Remote Keyer</a> for more details.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

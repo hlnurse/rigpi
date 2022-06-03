@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Settings &gt; System</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="System Settings provides information about system aspects of RSS and buttons to reboot RigPi or shut it down. System Settings is only available for Access Level 1 accounts." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "system.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">System</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?system.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="settings.html">Settings</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">System</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="macros.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="settings.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="chapter-2.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">System Settings provides information about system aspects of RSS and buttons to reboot RigPi or shut it down. System Settings is only available for Access Level 1 accounts.</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:65%;max-width:578px;height:auto;"><img alt="2-system" style="width:100%;height:auto;border:none" src="2-system.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">Reboot RigPi</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">Restarts RigPi. Any active user accounts must be restarted along with connecting radios.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">Shut Down RigPi</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">Use the Shut Down button before disconnecting power to RigPi. Wait for the green activity light to stop blinking for proceeding. Not doing so could damage the RigPi memory card.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">Get FCC Database</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">Refreshes the FCC callsign lookup database loaded on RigPi. The refresh process takes about 15 minutes to complete. Note the entire FCC database is updated by the FCC once per week.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">LAN IP 1</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">RSS can connect to the Internet through Ethernet and/or Wi-Fi. If only Ethernet or Wi-Fi is used, LAN IP 1 is the IP address for that connection. Use LAN IP 1 for the LAN IP if you are setting up port forwarding in your Internet router.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">LAN IP 2</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">If RSS is connected to the Internet through an Ethernet connection and through Wi-Fi, the Ethernet connection is shown in LAN IP 1 and the Wi-Fi address is shown in LAN IP 2.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">WAN IP</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">WAN IP is the public IP of your connection to the Internet. This is the IP you can use to connect to RSS when away from home. You must set up port forwarding in your router for RSS and Mumble to operate remotely.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">RPi Temp</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">Shows the temperature of the CPU chip on the Raspberry Pi. The core temperature goes up as the Raspberry Pi gets more heavily loaded. The maximum operating temperature is rated for 80-deg C. If the temperature goes above 85-deg, the CPU is throttled. Normally you will see the temperature under 50-deg C.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">Rigctl Port</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">The port used to control the radio for the current account. Use this port number if connecting to another application (such as Fldigi) and you want to have both RSS and the other application control the radio. You can also use this number to connect a second (or more) accounts to the current radio. Enter the port number in the Port field in Basic or Advanced Radio settings.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">CCM Port</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">The port used to connect CommCat Mobile or CommCat to RSS to control the current radio.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">RSS Vers</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">The current RSS version number</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; padding:10px; border:none"><p class="p_Normal">Update RSS Files</p>
+</td>
+<td style="vertical-align:top; width:635px; padding:10px; border:none"><p class="p_Normal">Update the RSS files to the most recent version. The update is a two-step process. The first step checks version numbers. If the version check shows an update is available, the second step installs the files from the RigPi web site. See Update RSS Files in Other Programs.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:172px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">Get RSS Stats</p>
+</td>
+<td style="vertical-align:top; width:635px; background-color:#FFFFFF; padding:10px; border:none"><p class="p_Normal">Provides a brief summary of RSS Statistics, including time since last reboot, number of connected users, and system loading.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>
