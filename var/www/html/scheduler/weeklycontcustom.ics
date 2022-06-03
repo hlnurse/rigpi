@@ -1,0 +1,329 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WA7BNM/Contest Calendar//NONSGML v1.0//EN
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602562@hornucopia.com
+DTSTART:20220115T000000Z
+DTEND:20220116T235900Z
+SUMMARY:Malaysia DX Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=658
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602560@hornucopia.com
+DTSTART:20220115T120000Z
+DTEND:20220116T115900Z
+SUMMARY:Hungarian DX Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=228
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602568@hornucopia.com
+DTSTART:20220115T120000Z
+DTEND:20220116T115900Z
+SUMMARY:PRO Digi Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=657
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602358@hornucopia.com
+DTSTART:20220115T120000Z
+DTEND:20220116T120000Z
+SUMMARY:UBA PSK63 Prefix Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=576
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417601882@hornucopia.com
+DTSTART:20220115T180000Z
+DTEND:20220116T055900Z
+SUMMARY:North American QSO Party, CW
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=218
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602551@hornucopia.com
+DTSTART:20220115T190000Z
+DTEND:20220117T035900Z
+SUMMARY:ARRL January VHF Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=231
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602521@hornucopia.com
+DTSTART:20220115T200000Z
+DTEND:20220116T055900Z
+SUMMARY:Feld Hell Sprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=436
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602579@hornucopia.com
+DTSTART:20220116T130000Z
+DTEND:20220116T170000Z
+SUMMARY:RSGB AFS Contest, Data
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=625
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602536@hornucopia.com
+DTSTART:20220116T230000Z
+DTEND:20220117T010000Z
+SUMMARY:Run for the Bacon QRP Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=385
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602512@hornucopia.com
+DTSTART:20220117T000000Z
+DTEND:20220117T010000Z
+SUMMARY:K1USN Slow Speed Test
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=681
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602593@hornucopia.com
+DTSTART:20220117T163000Z
+DTEND:20220117T172900Z
+SUMMARY:OK1WC Memorial (MWC)
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=683
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602544@hornucopia.com
+DTSTART:20220118T010000Z
+DTEND:20220118T015900Z
+SUMMARY:Worldwide Sideband Activity Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=672
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602476@hornucopia.com
+DTSTART:20220118T170000Z
+DTEND:20220118T190000Z
+SUMMARY:RTTYOPS Weeksprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=670
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602530@hornucopia.com
+DTSTART:20220119T020000Z
+DTEND:20220119T033000Z
+SUMMARY:QRP Fox Hunt
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=518
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602484@hornucopia.com
+DTSTART:20220119T023000Z
+DTEND:20220119T030000Z
+SUMMARY:Phone Weekly Test - Fray
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=593
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602488@hornucopia.com
+DTSTART:20220119T130000Z
+DTEND:20220119T140000Z
+SUMMARY:CWops Test (CWT)
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=498
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602727@hornucopia.com
+DTSTART:20220119T170000Z
+DTEND:20220119T200000Z
+SUMMARY:VHF-UHF FT8 Activity Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=674
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602874@hornucopia.com
+DTSTART:20220119T170000Z
+DTEND:20220119T175900Z
+SUMMARY:Mini-Test 40
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=711
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602877@hornucopia.com
+DTSTART:20220119T180000Z
+DTEND:20220119T185900Z
+SUMMARY:Mini-Test 80
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=712
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602492@hornucopia.com
+DTSTART:20220119T190000Z
+DTEND:20220119T200000Z
+SUMMARY:CWops Test (CWT)
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=498
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602538@hornucopia.com
+DTSTART:20220120T000000Z
+DTEND:20220121T030000Z
+SUMMARY:Walk for the Bacon QRP Contest
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=699
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602522@hornucopia.com
+DTSTART:20220120T013000Z
+DTEND:20220120T033000Z
+SUMMARY:NAQCC CW Sprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=358
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602496@hornucopia.com
+DTSTART:20220120T030000Z
+DTEND:20220120T040000Z
+SUMMARY:CWops Test (CWT)
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=498
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602500@hornucopia.com
+DTSTART:20220120T070000Z
+DTEND:20220120T080000Z
+SUMMARY:CWops Test (CWT)
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=498
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602480@hornucopia.com
+DTSTART:20220120T170000Z
+DTEND:20220120T190000Z
+SUMMARY:RTTYOPS Weeksprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=670
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602718@hornucopia.com
+DTSTART:20220120T190000Z
+DTEND:20220120T200000Z
+SUMMARY:EACW Meeting
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=698
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602504@hornucopia.com
+DTSTART:20220121T014500Z
+DTEND:20220121T021500Z
+SUMMARY:NCCC RTTY Sprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=540
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602534@hornucopia.com
+DTSTART:20220121T020000Z
+DTEND:20220121T033000Z
+SUMMARY:QRP Fox Hunt
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=518
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602508@hornucopia.com
+DTSTART:20220121T023000Z
+DTEND:20220121T030000Z
+SUMMARY:NCCC Sprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=44
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602517@hornucopia.com
+DTSTART:20220121T200000Z
+DTEND:20220121T210000Z
+SUMMARY:K1USN Slow Speed Test
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=681
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602868@hornucopia.com
+DTSTART:20220122T070000Z
+DTEND:20220122T180000Z
+SUMMARY:Marconi Club ARI Loano QSO Party Day
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=710
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602556@hornucopia.com
+DTSTART:20220122T120000Z
+DTEND:20220123T120000Z
+SUMMARY:BARTG RTTY Sprint
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=230
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602580@hornucopia.com
+DTSTART:20220122T130000Z
+DTEND:20220122T170000Z
+SUMMARY:RSGB AFS Contest, SSB
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=626
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417601883@hornucopia.com
+DTSTART:20220122T180000Z
+DTEND:20220123T055900Z
+SUMMARY:North American QSO Party, SSB
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=229
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602563@hornucopia.com
+DTSTART:20220122T180000Z
+DTEND:20220123T055900Z
+SUMMARY:NA Collegiate Championship, SSB
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=640
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20220117T000605Z
+UID:417602582@hornucopia.com
+DTSTART:20220123T140000Z
+DTEND:20220126T080000Z
+SUMMARY:Classic Exchange, Phone
+DESCRIPTION:http://www.hornucopia.com/contestcal/weeklycont.php
+URL:http://www.hornucopia.com/contestcal/contestdetails.php?ref=494
+END:VEVENT
+END:VCALENDAR

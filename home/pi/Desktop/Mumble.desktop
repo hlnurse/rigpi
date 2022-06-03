@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Exec=/home/pi/RSS/MumbleAutostart.py
+Name=Mumble Autostart
+Categories=Network
+Type=Application
+Icon=/usr/share/icons/hicolor/scalable/apps/mumble.svg
+Terminal=false
+Name[en_US]=Mumble Autostart
