@@ -1,0 +1,385 @@
+[09-Jul-2021 16:14:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[16-Jul-2021 12:30:32 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[04-Aug-2021 17:10:02 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[04-Aug-2021 17:10:06 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[12-Aug-2021 17:41:56 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[12-Aug-2021 17:45:25 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[12-Aug-2021 17:45:40 America/Los_Angeles] PHP Notice:  Undefined index: 23LM in /var/www/html/programs/GetFrequencyMem.php on line 22
+[12-Aug-2021 17:45:47 America/Los_Angeles] PHP Notice:  Undefined index: 70LM in /var/www/html/programs/GetFrequencyMem.php on line 22
+[12-Aug-2021 17:45:49 America/Los_Angeles] PHP Notice:  Undefined index: 1.25LM in /var/www/html/programs/GetFrequencyMem.php on line 22
+[12-Aug-2021 17:46:01 America/Los_Angeles] PHP Notice:  Undefined index: 1.25LM in /var/www/html/programs/GetFrequencyMem.php on line 22
+[24-Aug-2021 15:34:57 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Aug-2021 15:35:58 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Aug-2021 15:36:06 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Aug-2021 15:37:42 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Aug-2021 15:38:25 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Aug-2021 15:40:01 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[25-Aug-2021 17:19:37 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[25-Aug-2021 17:19:38 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[25-Aug-2021 18:44:17 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[25-Aug-2021 18:45:04 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[25-Aug-2021 18:45:10 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[26-Aug-2021 16:35:26 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[08-Sep-2021 07:32:32 America/Los_Angeles] PHP Notice:  Undefined index: MacroBank in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 07:32:32 America/Los_Angeles] PHP Notice:  Undefined index: Macros<br />
+<b>Notice</b>:  Undefined index: MacroBank in <b>/var/www/html/programs/GetInterface.php</b> on line <b>27</b><br />
+ in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 07:35:35 America/Los_Angeles] PHP Notice:  Undefined index: MacroBank in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 07:35:46 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'MacroBank' in 'field list' query: UPDATE RadioInterface SET `MacroBank` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('RadioInterface', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[08-Sep-2021 07:35:50 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[08-Sep-2021 07:36:53 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[08-Sep-2021 10:29:48 America/Los_Angeles] PHP Notice:  Undefined index: MacroBank in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 10:30:16 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'MacroBank' in 'field list' query: UPDATE RadioInterface SET `MacroBank` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('RadioInterface', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[08-Sep-2021 10:30:41 America/Los_Angeles] PHP Notice:  Undefined index: MacroBank in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 10:30:52 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'MacroBank' in 'field list' query: UPDATE RadioInterface SET `MacroBank` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('RadioInterface', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[08-Sep-2021 10:31:03 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[08-Sep-2021 10:45:46 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[08-Sep-2021 10:46:01 America/Los_Angeles] PHP Notice:  Undefined index: MacroBank in /var/www/html/programs/GetInterface.php on line 27
+[08-Sep-2021 10:46:01 America/Los_Angeles] PHP Notice:  Undefined index: Macros<br />
+<b>Notice</b>:  Undefined index: MacroBank in <b>/var/www/html/programs/GetInterface.php</b> on line <b>27</b><br />
+ in /var/www/html/programs/GetInterface.php on line 27
+[01-Oct-2021 18:23:31 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[01-Oct-2021 18:23:35 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[10-Oct-2021 14:01:23 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[10-Oct-2021 14:02:00 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[10-Oct-2021 14:02:15 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[10-Oct-2021 14:02:17 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[10-Oct-2021 14:03:23 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[10-Oct-2021 14:03:24 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[10-Oct-2021 17:35:10 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:04:52 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:04:56 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[11-Oct-2021 11:07:04 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:07:13 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[11-Oct-2021 11:07:59 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:08:32 America/Los_Angeles] PHP Notice:  Undefined index: data in /var/www/html/programs/SetSettings.php on line 12
+[11-Oct-2021 11:09:06 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:09:25 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 11:10:06 America/Los_Angeles] PHP Notice:  Undefined index: data in /var/www/html/programs/SetSettings.php on line 12
+[11-Oct-2021 11:44:52 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 15:51:34 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 15:51:38 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[11-Oct-2021 15:52:11 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 15:52:50 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 15:53:04 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 15:53:35 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[11-Oct-2021 16:04:40 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 11:03:22 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 11:03:43 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 11:04:24 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 11:08:48 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 11:17:59 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 12:19:18 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 12:21:12 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[15-Oct-2021 12:24:11 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 12:29:41 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 12:29:48 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[15-Oct-2021 12:30:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[15-Oct-2021 12:30:53 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[30-Oct-2021 10:03:06 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[30-Oct-2021 10:13:09 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[01-Nov-2021 13:51:39 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[01-Nov-2021 13:51:41 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:1919
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1512): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(847): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 1919
+[01-Nov-2021 13:52:39 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[01-Nov-2021 13:54:27 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Dec-2021 11:28:05 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Dec-2021 16:17:55 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Dec-2021 16:52:40 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[24-Dec-2021 16:53:32 America/Los_Angeles] PHP Fatal error:  Uncaught Exception: Unknown column 'CWChangeCk' in 'field list' query: UPDATE Keyer SET `CWChangeCk` = ? WHERE  Radio = ?  in /var/www/html/classes/MysqliDb.php:2013
+Stack trace:
+#0 /var/www/html/classes/MysqliDb.php(1601): MysqliDb->_prepareQuery()
+#1 /var/www/html/classes/MysqliDb.php(926): MysqliDb->_buildQuery(NULL, Array)
+#2 /var/www/html/programs/SetSettings.php(105): MysqliDb->update('Keyer', Array)
+#3 {main}
+  thrown in /var/www/html/classes/MysqliDb.php on line 2013
+[24-Dec-2021 18:04:29 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 12:44:38 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 15:42:41 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 15:42:47 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 15:43:03 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 15:47:35 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[27-Dec-2021 15:55:09 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[07-Feb-2022 10:32:15 America/Los_Angeles] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /var/www/html/programs/GetSetting.php:23
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/programs/GetSetting.php on line 23
+[07-Feb-2022 10:32:15 America/Los_Angeles] PHP Notice:  Undefined index: rotor in /var/www/html/programs/GetRotorIn.php on line 13
