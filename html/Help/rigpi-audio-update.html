@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Technical &gt; RigPi Audio Update</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Early versions of RigPi used a settings file named audioinjector-wm8731-audio for the RigPi Audio board. &nbsp;If you don't have a RigPi Audio board installed in your RigPi, it is..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "rigpi-audio-update.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Audio Update</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?rigpi-audio-update.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="technical.html">Technical</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Audio Update</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rigpi_local-on-windows-compute.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="technical.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="rigpi-keyer-ptt.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="background-color: #ffffff;">Early versions of RigPi used a settings file named audioinjector-wm8731-audio for the RigPi Audio board. &nbsp;If you don't have a RigPi Audio board installed in your RigPi, it is not necessary to proceed with the recommended changes.</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="background-color: #ffffff;">If you have one of the early RigPi servers, follow the steps below to update. &nbsp;Right-click Speaker icon on the Raspberry Pi Speaker icon. &nbsp;If the drop down list includes &quot;audioinjector,&quot; it is strongly recommended you proceed with this change. If the list already includes&nbsp;</span>snd_rpi_proto, please confirm the audio settings steps below for Audio Device Settings.  <span style="background-color: #ffffff;">Even if you are using your radio's CODECs to provide input and output audio, it is best to make these change for the RigPi Audio board.</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="background-color: #ffffff;">This topic also includes information on how to change audio levels and switches in Raspberry Pi settings for the new overlay.&nbsp;</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;">This update changes a file called a “device tree overlay” to a new one that is better suited for the RigPi Audio board. &nbsp;The new overlay provides significant improvements for the decoding of FT8 signals in WSJT-X and Mumble audio quality for weak signals.</p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;">Because this change requires elevated file access permissions it will be done manually. &nbsp;A file will be edited from the Raspberry Pi Desktop.</p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;">Open the Raspberry Pi Desktop by:</p>
+<p style="text-indent: 0; background: #ffffff; padding-left: 24px; margin: 10px 0 10px 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">1.</span>Attaching an HDMI Monitor (micro HDMI for Raspberry Pi 4B), USB mouse and USB keyboard to RigPi, or….</p><p style="text-indent: 0; background: #ffffff; padding-left: 24px; margin: 10px 0 10px 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">2.</span>Using VNC Viewer from another computer to open the Raspberry Pi Desktop in a virtual window.</p><p style="background: #ffffff; margin: 10px 0 10px 0;">Start Terminal by single-clicking the black icon in the Desktop toolbar. Enter the following commands:</p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<div style="text-align: center; background: #ffffff; margin: 10px 0 10px 48px;"><div style="margin:0 auto 0 auto;width:70%;max-width:1322px;height:auto;"><img alt="Screen Shot 2019-06-25 at 12.43.21 PM" style="width:100%;height:auto;border:none" src="hmfile_hash_8b075fe5.png"/></div></div>
+<p style="text-align: center; background: #ffffff; margin: 10px 0 10px 48px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 48px;"><span style="font-family: Courier,monospace;">cd /boot&lt;Enter&gt;</span><br />
+<span style="font-family: Courier,monospace;">sudo nano config.txt&lt;Enter&gt;</span><br />
+<span style="font-family: Courier,monospace;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;">Scroll to the end of the config.txt file using the down arrow key.<br />
+Replace the second to last line (containing audioinjector-wm8731-audio) with this:  </p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<div style="text-align: center; background: #ffffff; margin: 10px 0 10px 52px;"><div style="margin:0 auto 0 auto;width:70%;max-width:1324px;height:auto;"><img alt="Screen Shot 2019-06-25 at 12.44.16 PM" style="width:100%;height:auto;border:none" src="hmfile_hash_d456c6fe.png"/></div></div>
+<p style="background: #ffffff; margin: 10px 0 10px 52px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 52px;"><span style="font-family: Courier,monospace;">dtoverlay=rpi-proto </span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span><br />
+Save and exit</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff; margin: 0 0 0 52px;"><span style="font-family: Courier,monospace;">Ctrl+o&lt;Enter&gt;</span></p>
+<p style="background: #ffffff; margin: 0 0 0 52px;"><span style="font-family: Courier,monospace;">Ctrl+x&lt;Enter&gt;</span></p>
+<p style="background: #ffffff; margin: 10px 0 10px 0;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span><br />
+Reboot using</p>
+<p style="text-indent: 48px; background: #ffffff; margin: 10px 0 10px 0;"><span style="font-family: Courier,monospace;">sudo reboot now&lt;Enter&gt;</span></p>
+<p style="background: #ffffff;">to have the change recognized.</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<div style="text-align: center; background: #ffffff;"><div style="margin:0 auto 0 auto;width:30%;max-width:562px;height:auto;"><img alt="Screen Shot 2019-06-25 at 12.34.45 PM" style="width:100%;height:auto;border:none" src="hmfile_hash_9b7c6838.png"/></div></div>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;">After rebooting, Right-click on the Speaker icon at the top right-hand end of the Desktop and select snd_rpi_proto for the following steps.</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;">We will now use the Raspberry Pi Audio Device Settings to set levels and input/output connections.</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="background-color: #ffffff;">Click the Raspberry Applications Menu icon in the top left corner of the Raspberry Pi Desktop, then select Preferences&gt;Audio Device Settings.</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="text-indent: 0; background: #ffffff; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Confirm that Card: snd_rpi_proto (Alsa mixer) is the selected card.</p><p style="text-indent: 0; background: #ffffff; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Use these settings for using the Mic or Line Input and Line Output. &nbsp;If the audio levels are too low, use the Mic settings in the Options tab.</p><p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-weight: bold; background-color: #ffffff;">Audio Device Settings, Selections:</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="background-color: #ffffff;">Click the Select Controls... button at the bottom. Put checks in the following options:</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Master</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Line In</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Microphone</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Mic Boost</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">5.</span>Capture</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">6.</span>Input MUX</p><p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 13px;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">7.</span>Output Mixer HiFi</p><p style="margin: 0 0 0 13px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-weight: bold; background-color: #ffffff;">Audio Device Settings, Levels and options:</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:155px; background-color:#CCFFCC; padding:10px; border:none"><p style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Control</span></p>
+</th>
+<th style="vertical-align:top; width:194px; background-color:#CCFFCC; padding:10px; border:none"><p style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Value</span></p>
+</th>
+<th style="vertical-align:top; width:331px; background-color:#CCFFCC; padding:10px; border:none"><p style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Notes</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:525px; padding:10px; border:none"><p><span style="font-weight: bold;">Playback</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Master</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p style="line-height: 1.28; margin: 0 0 11px 0;">2/3 maximum</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p>change to suit</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Mic Boost</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>Maximum</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p style="line-height: 1.28; margin: 0 0 11px 0;">change to suit</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:525px; padding:10px; border:none"><p><span style="font-weight: bold;">Capture</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Capture</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>2/3 maximum</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p style="line-height: 1.28; margin: 0 0 11px 0;">change to suit</p>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:525px; padding:10px; border:none"><p><span style="font-weight: bold;">Switches</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Line-in</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>checked</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Microphone</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>Checked</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Output Mixer HiFi</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>Checked</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:525px; padding:10px; border:none"><p><span style="font-weight: bold;">Options</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:155px; padding:10px; border:none"><p>Input Mux</p>
+</td>
+<td style="vertical-align:top; width:194px; padding:10px; border:none"><p>Line In</p>
+</td>
+<td style="vertical-align:top; width:331px; padding:10px; border:none"><p>Select Mic for low level audio input</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="background-color: #ffffff;">Finally, click the Make Default button at the bottom and close the Audio Devices Settings.</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="background-color: #ffffff;">After testing with your transceiver you may find it necessary to change some of the Audio Device Settings window options and levels.</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-weight: bold; background-color: #ffffff;">Other settings</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;">Any program that uses audio from RigPi Audio, a radio CODEC, or an external USB sound card should be set to [default] for input and output devices except for Mumble. &nbsp;The default is set by using the Speaker right-click menu.</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;">If you wish to use a digital mode program (Fldigi, JT8Call, WSJT-X) use [default] for all audio input and output devices.</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;">In Mumble client, use [sysdefault:CARD=sndrpiproto] snd_rpi_proto, Default Audio Device if using the RigPi Audio board. &nbsp;If using a radio CODEC, use [default].</p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="background: #ffffff;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000; background-color: #ffffff;">&nbsp;</span></p>
+<p style="line-height: 1.28; margin: 0 0 11px 0;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="line-height: 1.28; margin: 0 0 11px 0;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+ 	    <div class="modal fade" id="myModalCopy" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document" style="width:500px;">
+ <div class="modal-content">
+ <!-- Modal Header -->
+ 
+         <div class="modal-header" style="height:70px; width:500px;">
+                <h2 class="modalZ-title" style="width:500px; height:50px; text-align: left;" id="modalZ-title"></h2>                             
+                       <button type="button"  style="height:40px; width:200px;" class="btn btn-warning">Copy/Close</button>
+                       
+                            <button type="button"  style="height:40px;" class="btn btn-info" data-dismiss="modal">Close</button>
+                            
+                  </div>                <!-- Modal body -->
+                <div class="modalZ-body" style="width:500px;" id="modalZ-body"></div>
+                 <!-- Modal footer -->
+            </div>
+        </div>
+             </div>

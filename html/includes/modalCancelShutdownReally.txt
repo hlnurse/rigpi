@@ -1,0 +1,18 @@
+	    <div class="modal fade" id="myShutDownAlertReally" tabindex="0">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modalS-title1"></h1><button type="button" class="close" id = "closeModal" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body" id="modalS-body1"></div>
+                 <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="modalRebootClose" data-dismiss="modal">NO</button>
+                    <button type="button" class="btn btn-secondary" id="modalShutDownOKReally">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>

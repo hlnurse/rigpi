@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html><head>
+   <title>RigPi Station Server Version 4</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- You can change the fonts, text colors, and styles of your search results with the CSS below -->
+   <style type="text/css">
+        body { font-size: 1em }
+        .submit { font-size: 1em; }
+        .highlight { background: #FFFF40; }
+        .searchheading { font-size: 1em; font-weight: bold; }
+        .summary { font-size: 0.9em; font-style: italic; }
+        .results { font-size: 1em }
+        .description { font-size: 0.9em }
+        .context { font-size: 1em }
+        .result_title { font-size: 1.1em }
+        .suggestion { font-size: 1em; }
+        .category { color: #999999; }
+        .sorting { text-align: right; }
+        .zoom_searchform { font-size: 100%; }
+        .zoom_results_per_page { font-size: 1em }
+        .zoom_match { font-size: 1em }
+        .zoom_categories { font-size: 0.9em }
+        .zoom_categories ul { display: inline; margin: 0; padding: 0;}
+        .zoom_categories li { display: inline; list-style-type: none;}
+        input.zoom_button {  }
+        input.zoom_searchbox {  }
+        .result_image { float: left; display: block; }
+        .result_image img { margin: 10px; width: 80px; border: 0px; }
+        .result_block { margin-top: 15px; margin-bottom: 15px; clear: left; }
+        .result_altblock { margin-top: 15px; margin-bottom: 15px; clear: left; }
+        .result_pages { font-size: 100%; }
+        .result_pagescount { font-size: 1em; }
+        .searchtime { font-size: 0.8em; }
+        .recommended {
+           background: #DFFFBF;
+	   border-top: 1px dotted #808080;
+	   border-bottom: 1px dotted #808080;
+	   margin-top: 15px;
+	   margin-bottom: 15px;
+	 }
+	 .recommended_heading { float: right; font-weight: bold; }
+         .recommend_block { margin-top: 15px; margin-bottom: 15px; clear: left; }
+         .recommend_title { font-size: 1.1em }
+         .recommend_description { font-size: 1em; color: #008000; }
+         .recommend_infoline { font-size: 0.8em; font-style: normal; color: #808080;}
+   </style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+var parentScope = (parent.hmNavigationFrame);
+$(document).ready(function(){
+	if (parentScope) parent.currentNav("search");
+	$("input#zoom_searchbox").attr("autocapitalize","none").attr("autocomplete","off");
+	$("a[target='hmcontent']").on("click",function(event){
+		if (parentScope) {
+			window.parent.showNav("toggle");
+			}
+		});
+});
+</script>
+   </head>
+<body>
+  <p class="submit">Enter one or more keywords to search ('*' and '?' wildcards are supported):</p>
+  <div id="loadingmsg" align="center"><img src="cicon_loadindex_ani.gif" style="border:none" alt="Loading..." /></div>
+<script type="text/javascript" src="settings.js" charset="UTF-8"></script>
+<script type="text/javascript" src="zoom_search.js"></script>
+<script type="text/javascript">ZoomSearch();</script>
+
+
+  <noscript>
+    <p>You must have JavaScript enabled to use this version of the search engine.</p>
+  </noscript>
+</body>
+</html>

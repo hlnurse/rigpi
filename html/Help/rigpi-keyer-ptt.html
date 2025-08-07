@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Technical &gt; RigPi Keyer PTT</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The WinKeyer IC used for CW keying has an independent PTT capability that can control the PTT output from RigPi Keyer. This special Keyer PTT operates in parallel with the..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "rigpi-keyer-ptt.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Keyer PTT</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?rigpi-keyer-ptt.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="technical.html">Technical</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Keyer PTT</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rigpi-audio-update.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="technical.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="rigpi-login-code.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The WinKeyer IC used for CW keying has an independent PTT capability that can control the PTT output from RigPi Keyer. This special Keyer PTT operates in parallel with the normal RigPi PTT. &nbsp;To use RigPi Keyer PTT, the Keyer must be assigned to the account for which you want to use it.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi PTT, configured in Radio settings, controls the PTT jacks on both boards, RigPi Keyer and RigPi Audio. &nbsp;Keyer PTT also controls the PTT line on RigPi Keyer, no matter whether RigPi PTT is on or not. &nbsp;Keyer PTT can be used to control an external device, such as a remote power switch or an antenna bypass switch.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Keyer PTT is controlled by custom macros. Two macros are pre-programmed in the RigPi Macro bank to accomplish this: SWITCH ON ($&lt;18&gt;&lt;01&gt;) and SWITCH OFF ($&lt;18&gt;&lt;00&gt;). &nbsp;In SETTINGS&gt;Keyer, remove the check from Enable Keyer PTT to switch to independent control using Macros.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="width:100%; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">RigPi PTT</span></p>
+</th>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Macro Switch</span></p>
+</th>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Audio PTT Out</span></p>
+</th>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:10px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Keyer PTT Out</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On (Off with jumper 201 removed)</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">On</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+<td style="vertical-align:top; padding:10px; border:none"><p class="p_Normal" style="text-align: center;">Off</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal">RigPi PTT (Radio Settings) has 3 options: None, ON when transmitting, and ON when radio connected. &nbsp;This third option overrides Key PTT since it is on whenever the radio is connected. &nbsp;Keyer PTT and Audio PTT are both on continuously. &nbsp;If RigPi PTT is set to None, Audio PTT never turns On, and Keyer PTT is controlled by the Macros. By removing jumper 201 on the RigPi Keyer board, RigPi PTT has no control over the Keyer PTT.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The Keyer PTT can be used to control an external power switch. &nbsp;Candidate power switches include:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">MFJ-1172 (discontinued)</p>
+<p class="p_Normal" style="text-align: center;"><img alt="MFJ-power-sw" width="200" height="255" style="margin:0 auto 0 auto;width:200px;height:255px;border:none" src="mfj-power-sw.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-style: normal;"><a href="https://www.amazon.com/Iot-Relay-Enclosed-High-Power-Raspberry/dp/B00WV7GMA2/ref=sr_1_3?crid=1JV9F6ACP917L&amp;keywords=digital+loggers+iot+relay+2&amp;qid=1693922434&amp;sprefix=digital+logger+iot%2Caps%2C122&amp;sr=8-3" target="_blank" class="weblink">Digital Loggers IoT Control Relay</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="31d3DLX1ubL" width="282" height="139" style="margin:0 auto 0 auto;width:282px;height:139px;border:none" src="31d3dlx1ubl.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

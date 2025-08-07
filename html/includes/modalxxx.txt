@@ -1,0 +1,63 @@
+<div class="modal fade" id="myModalInput" role="dialog">
+	<div class="modal-dialog" style="background-color:white;" role="document">
+		<div class="modal-content">
+			<!-- Modal Header -->
+	
+			<div class="modal-header">
+				<h1 class="modal-title" style="text-align:left;" id="modal-title"></h1>
+					<button type="button" class="btn btn-secondary" id="modalInputClose" data-dismiss="modal">Cancel</button>
+					&nbsp;
+					<button type="button" class="btn btn-info" id="closeModalInput" data-dismiss="modal">OK</button>
+			</div>
+			<!-- Modal body -->
+			<div class="modalI-body" style="color:black; background-color:white;" id="modalI-body"></div>
+		 	<!-- Modal footer -->
+			<div class="col-centered" style="background-color:white;">
+	<p>
+			<div class="input-group col-centered" style="background-color:white; width:100%;" >
+				<div class="input-group-prepend">
+					<span class="input-group-text radio-group-addon">Frequency</span>
+				</div>
+				<input type="text" pattern="\d+" style="padding-left:10px; border:1px solid #666666" title="Input frequency" id="curFreq"> 
+			</div>
+	
+			<p>
+	
+			<div class="input-group col-centered" style="background-color:white; width:100%;" >
+				<div class="input-group-prepend">
+					<span class="input-group-text radio-group-addon">Mode</span>
+				</div>
+				<input type="text" class="form-control disable-text" readonly id="curMode1"  style="width:150px;" title="Mode List">
+				<div class="input-group-btn">
+					<div class="dropdown">
+						<button class="btn btn-primary dropdown-toggle" id="curMode" data-size="3" type="button"  title="Mode List" data-toggle="dropdown"><i class="fas fa-list-alt fa-lg"></i>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right menu-scroll" id='modeList'>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>
+	
+			<div class="modalIP-body" style="color:black; background-color:white;" id="modalP-body"></div>
+			<div class="input-group col-centered" style="background-color:white; width:100%;" >
+				<div class="input-group-prepend">
+					<span class="input-group-text radio-group-addon">Passband</span>
+				</div>
+				<input type="text" pattern="\d+" style="width:170px; padding-left:10px; border:1px solid #666666" title="Passband" id="curPassband1"> 
+				<div class="input-group-btn">
+					<div class="dropdown" >
+					<button class="btn btn-primary dropdown-toggle" id="curPassband" data-size="3" type="button"  title="Passband List" data-toggle="dropdown"><i class="fas fa-list-alt fa-lg"></i>
+					</button>
+					<div class="dropdown-menu dropdown-menu-right menu-scroll" id='passbandList1'>
+						<div id="passbandList"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<p>
+		</div>
+	</div>
+</div>
+				
