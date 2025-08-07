@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Technical &gt; RigPi Remote Keyer</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="See also: Keyer Advanced Radio &nbsp;The RigPi Remote Keyer feature allows you to operate CW from a remote location using a paddle, bug or straight key. &nbsp; A RigPi with a modified" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "rigpi-remote-keyer.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Remote Keyer</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?rigpi-remote-keyer.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="technical.html">Technical</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">RigPi Remote Keyer</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rigpi-login-code.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="technical.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="scematics.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:90%;max-width:576px;height:auto;"><img alt="rpi-box-radio" style="width:100%;height:auto;border:none" src="rpi-box-radio.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">See also: <a href="keyer.html" class="topiclink">Keyer</a> <a href="advanced-radio.html#advancedkeyer" class="topiclink">Advanced Radio</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The RigPi Remote Keyer feature allows you to operate CW from a remote location using a paddle, bug or straight key. &nbsp; A RigPi with a modified Keyer board is required for early RigPi's) at both ends (see schematic, below). &nbsp;One of several keying options can be used at the remote end:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">At radio end:</span></p>
+<p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">1.</span>Radio RigPi1-4</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">A.</span>RigPi 4 software</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">B.</span>Raspberry Pi 3B+ or 4B</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">C.</span>Audio Board or CODEC (for VoIP) and CW Board</p><p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">At remote key end (2 options):</span></p>
+<p style="text-indent: -24px; margin: 0 0 0 48px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">1.</span>RigPi 1-4 (same as radio end)</p><p>Or</p>
+<p style="text-indent: 0; padding-left: 0; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">2.</span>RigPi Hub Windows program</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">A.</span>RigPi Hub 2.4.0 or later</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">B.</span>Control the radio through RigPi Hub with your favorite logging program</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">C.</span>Send CW from most logging programs, straight key, keyboard key or mouse button, or electronic key</p><p style="text-indent: 0; padding-left: 24px; margin: 0 0 0 48px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">D.</span>Requires Windows Mumble client for VoIP</p><p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal">A RigPi Keyer can serve one of four functions as determined by the Keyer Fn in SETTINGS-&gt;Keyer. &nbsp;See below the table for examples.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:101px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Keyer Function</span></p>
+</td>
+<td style="vertical-align:top; width:329px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Keying</span></p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Note</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:101px; padding:5px; border:none"><p class="p_Normal">Normal</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">One RigPi with keying capability.</p>
+</td>
+<td style="vertical-align:top; width:329px; padding:5px; border:none"><p class="p_Normal">Key your transmitter from any browser using Tuner macros, the Keyer window, or from RigPi Hub. </p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal">A Windows keying program using RigPi Hub 2.4 (or later) for keying. In RigPi Hub, set the RigPi IP, RigPi Control Port to 3000n, and CW Port to 3000n where n is the account number.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:101px; padding:5px; border:none"><p class="p_Normal">Remote/Radio Keyer Manual Keying</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Two RigPi's, each with modified Keyer board</p>
+</td>
+<td style="vertical-align:top; width:329px; padding:5px; border:none"><p class="p_Normal">Requires two RigPi's, each with a Keyer board. &nbsp;Connect your paddle, bug, straight key, or RigPi Hub to the Remote RigPi . &nbsp;The Remote RigPi controls the Radio RigPi. See Getting Started with Two RigPi's, below.</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal">A Windows keying program can be connected to the Radio RigPi using RigPi Hub 2.4 for keying in lieu of a Remote RigPi.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Set the CW port, 30039 + n, when n is the account number. which is used for Radio Keyer data. Set the IP address for the Radio Keyer RigPi in Remote Keyer settings. &nbsp;Use the RigPi Radio LAN IP (when at home) or the RigPi Radio WAN IP (when away). &nbsp;If using a bug or straight key, connect the key using the tip and sleeve of the PADDLE connector. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use Vibrobug in the Radio RigPi SETTINGS-&gt;Keyer-&gt;Paddle Md.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use Remote Keyer at the Remote end and Radio Keyer at the Radio end in SETTINGS-&gt;Keyer-&gt;Keyer Fn.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:101px; padding:5px; border:none"><p class="p_Normal">External CTS, Manual Keying</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">One Radio RigPi with Keyer board. No Remote.</p>
+</td>
+<td style="vertical-align:top; width:329px; padding:5px; border:none"><p class="p_Normal">Key CW from an external keying source connected to the CTS connection on a serial-to-USB adapter. Connect the RTS pin to the transmitter keying jack (through an appropriate interface circuit). See below for more about adapters. Remote keying is not supported.</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal">Set External CTS in RigPi Advanced (Keyer) and Keyer settings (Keyer Fn). &nbsp;Select the USB adapter in &nbsp;SETTINGS-&gt;Advanced &nbsp;Settings-&gt;Keyer Port.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use Radio Keyer in SETTINGS-&gt;Keyer-&gt;Keyer Fn.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:101px; padding:5px; border:none"><p class="p_Normal">Direct IP Connection (not needed as a separate function in the Keyer Fn list)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Keyer required at Radio end, optional at Remote end.</p>
+</td>
+<td style="vertical-align:top; width:329px; padding:5px; border:none"><p class="p_Normal">Requires two RigPi's, or RigPi Hub at Remote, with a Keyer at the radio end. Enter the &lt;Radio RigPi LAN&gt;:&lt;port&gt; or &lt;WAN IP&gt;:&lt;port&gt; in the Remote Advanced Settings-&gt;Keyer Port OR Remote RigPi SETTINGS-&gt;Keyer Settings-&gt;Rad &nbsp;Port and Radio IP boxes. If a Windows logging program you are using supports using an IP for WinKeyer keying, you can use that program rather than a Remote RigPi or RigPi Hub.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you have a Keyer at the remote end, the Keyer Settings option provides a sidetone. &nbsp;You will not get a sidetone if you use the Advanced Radio option.</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal">RigPi Hub running under Windows can be used in place of a second RigPi. &nbsp;For that option you can use the RigPi Hub sidetone or the radio's Mon function (if supported in your radio) to provide a sidetone.</p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Getting Started with Two RigPi's</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm that the RigPi Keyer is working correctly in each RigPi using the Normal Keyer function. If using two RigPi's on the same local network, use the IP address for each RigPi rather than the domain name. &nbsp;You can change the domain name in one RigPi using sudo raspi-config in a terminal on that RigPi. &nbsp;Change it to something like &quot;radio.local' or 'remote.local'.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Radio Keyer</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Start the Radio RigPi in any browser.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Advanced Radio enter the settings for your radio. &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Select RigPi Keyer in the Key list. </p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Keyer, set the Keyer Fn to Normal and put a check in the Enable Sidetone check box.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Connect a cable from the RigPi KEY connector to the CW keying jack on your radio. &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Connect Radio on the Tuner window. The frequency shown should be the same as shown on the radio.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Test Keyer in the Keyer Settings window. &nbsp;You will hear two Morse V characters indicating the Keyer is functioning correctly.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Connect a Keyer paddle to the PADDLE connector, open the Keyer window and send a few characters. &nbsp;If you wish to use a Bug or straight key, connect it between tip and sleeve on the connector and set the Paddle Md to Vibrobug.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>The Radio Keyer is now set for the Normal mode.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Remote Keyer</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>RigPi is running using rigpi4.local on the Radio and Remote RigPi's. &nbsp;This will cause a conflict when both are connected to the same LAN. To resolve this conflict, open the Raspberry Pi desktop. &nbsp;Go to Menu&gt;Preferences&gt;Raspberry Pi Configuration. &nbsp;Enter rigpi4R.local in the Hostname, click OK, and give permission to reboot. &nbsp;From now on you can access the Remote RigPi by using rigpi4R.local.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Start the Remote RigPi in any browser.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Advanced Radio select the Hamlib&gt;Dummy radio. &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Select RigPi Keyer in the Key list.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Keyer, set the Keyer Fn to Normal and put a check in the Enable Sidetone check box. &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Connect Radio in the Tuner window. The frequency shown should be 145.000.000 MHz. </p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Test Keyer in Settings&gt;Keyer. &nbsp;You will hear two Morse V characters indicating the Keyer is functioning correctly. &nbsp; </p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Connect a Keyer paddle to the PADDLE connector, open the Keyer window and send a few characters. &nbsp;If you wish to use a Bug or straight key, connect it between tip and sleeve on the connector and set the Paddle Md to Vibrobug.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Setting up Remote Keying with Two RigPi's</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Once both keyers are working using the Normal function, we will set up the remote keyer connection through your local network. &nbsp;A dedicated port 30040 (default, use 30039 + account number) is used for the CW data.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Radio RigPi Keyer</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Keyer select Radio Keyer in the Keyer Fn list.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Settings&gt;Keyer, enter a port in the Port box (30040 is recommended, must be the same as used in Remote Keyer).</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Test Keyer to register the new settings.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Tuner, click Disconnect Radio and Connect Radio to start the Radio Keyer function with the new settings.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Remote RigPi Keyer</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Keyer select Remote Keyer in the Keyer Fn list.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Settings&gt;Keyer, enter a port in the Port box (30040 is recommended).</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Enter the Radio RigPi LAN (or WAN) IP in the IP box.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>Click Test Keyer to register the new settings.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>In Tuner, click Disconnect Radio and Connect Radio to start the Remote Keyer function with the new settings.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You are all set for Remote CW. &nbsp;Tune your radio to the CW portion of a band and turn on VOX. &nbsp;With the Keyer window open on the Remote Keyer RigPi, try sending some characters. &nbsp;You will hear the sidetone on both keyers and your radio should transmit.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Note the following:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>If running Remote and Radio RigPi near each other, turn off the Radio Sidetone to hear the Remote RigPi Sidetone more easily.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>When using Remote RigPi away from home you must set up UDP port forwarding for the port you have assigned (30040).</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>When using Remote RigPi away from home you must use the WAN IP instead of the Radio RigPi LAN IP.</p><p class="p_Normal" style="text-indent: 0; padding-left: 39px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#9642;</span>To control your radio, open any browser at the remote location and connect to rigpi4.local. &nbsp;Port 80 must be forwarded to connect through your router if you are away from home. &nbsp;Use the WAN IP address of your Internet connection to connect.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">RigPi Keyer Board Modifications</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Two jumpers must be added to the RigPi Keyer board to allow remote keying, see below. This only applies to early production RigPi 1 Keyer boards. &nbsp;The jumpers have been added to later boards.</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:100%;max-width:684px;height:auto;"><img alt="KeyerMods" style="width:100%;height:auto;border:none" src="keyermods.png"/></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-size: 19px; font-style: normal; font-weight: bold;">Remote Keying from a Windows Computer</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Remote CW can be keyed from most Windows logging programs through a RTS or DTR keying input to RigPi Hub, or through WinKeyer compatibility. &nbsp;RigPi Hub 2+ is a Windows Virtual Port program that can control RigPi from up to 4 Windows programs. &nbsp;It is available for free from the RigPi web site:  <a href="https://rigpi.net" target="_blank" class="weblink">https://rigpi.net</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;"> is a Windows programs that can connect to RigPi Hub. &nbsp;Using Morse Keyer you can send CW through RigPi Hub to a radio using a straight key, paddle, bug or even mouse buttons. &nbsp;A sidetone is provided in RigPi Hub. &nbsp;Select a free port in RigPi Hub, open it, then connect Morse Keyer to that port.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">You can use a decommissioned mouse to connect to a physical key using </span><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;">. &nbsp;It is possible to connect two mice to a computer although they control the same mouse pointer. &nbsp;The downside to this approach is that you must move the mouse pointer over the &quot;keypad&quot; on the </span><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;"> window to send &nbsp;using a key using the re-purposed mouse. &nbsp;Select a free port in RigPi Hub, open it, then connect </span><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;"> to that port.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Using two USB-to-serial adapter cables you can key </span><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;"> through a USB port and thence key RigPi Hub. &nbsp;See the </span><span class="f_ImageCaption">Morse Keyer</span><span class="f_ImageCaption" style="font-style: normal;"> web Help page for details on connecting your key to Morse Keyer using a USB/serial connection.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><a href="https://morse-rss-news.sourceforge.net/" target="_blank" class="weblink">https://morse-rss-news.sourceforge.net/</a></p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal">RigPi Hub can use a physical serial port in addition to virtual ports. &nbsp;Jumper the keying output from Morse Keyer (pin 4 on a DB-9 connector) to the CTS input on the second cable. &nbsp;See RigPi Hub Help for details.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Using remote CW with RigPi Hub</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi Hub 2+ can be used with RigPi to send CW from a Windows program through a virtual port. &nbsp;Two ways to send CW are provided with RigPi Hub: element based (key-down and key up times for each element are sent); character based (ASCII characters are sent to RigPi where they are converted to CW). &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a id="element_keying" class="hmanchor"></a><span style="font-weight: bold;">Element based keying</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Element based keying requires a second port (in addition to a radio control port) for keying purposes. &nbsp; Note there is a delay keying the radio. &nbsp;This delay allows the key-down lengths to be faithfully produced for each character. &nbsp;RigPi Hub uses adaptive timing to watch for word spaces. &nbsp;When a word space is recognized, RigPi Hub sends the keying data to RigPi for that character. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The default port for element based keying in 30040 (for account 1, use 30041 for account 2, and so on). &nbsp;You must use a RigPi Keyer board at the radio end, set up for Radio Keyer in SETTINGS-&gt;Keyer-&gt;Keyer Fn. &nbsp;Open port 30040 for UDP in your router when operating away from home.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In addition to a manual keyer or logging program, here are additional ways you can key using RigPi Hub:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 65px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Click the Key button on RigPi Hub with your mouse</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 65px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Press the &quot;=&quot; key on your keyboard (upper right on the keyboard)</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin: 0 0 0 65px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Press the &quot;`&quot; key on your keyboard (upper left on the keyboard)</p><p class="p_Normal" style="margin: 0 0 0 65px;">&nbsp;</p>
+<p class="p_Normal">Configure your program to use DTR or CTS for transmitting CW. &nbsp;Assign a RigPi Hub virtual port to the CW keying function of the external program.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following programs have been tested using element based CW:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">CommCat (discontinued)</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">Ham Radio Deluxe/Digital Master</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">N1MM</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">DXLog</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">Morse Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal">RigPi Hub can connect to a physical port for keying from an external device such as an electronic keyer, straight key or bug. &nbsp;Select the serial port you want to use in the CW group and click Connect.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">You can use a USB-to-serial adapter to gain access to the RTS, DTR and CTS control lines. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a id="cwmorse" class="hmanchor"></a>The <span class="f_Heading1" style="font-size: 15px; font-weight: normal; color: #333333; letter-spacing: -1px;">CWMorse MY-KEY-SERIAL2 USB to key interface</span> contains the interface circuits to transmit and key Morse code.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="clip0026" width="249" height="261" style="margin:0 auto 0 auto;width:249px;height:261px;border:none" src="clip0026.png"/></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 16px; font-family: 'Times New Roman',Times,Georgia,serif; color: #0000ff; text-decoration: underline;"><a href="https://kc9on.com/product/my-key-serial2/" target="_blank" class="weblink" title="CWMorse link">KC9ON Order Link</a></span></p>
+<p style="text-align: center;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span class="f_ImageCaption" style="font-style: normal;">Because of its width, use a short extension cable so other USB ports won't be blocked. &nbsp;Here is one I use:</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img alt="clip0027" width="335" height="200" style="margin:0 auto 0 auto;width:335px;height:200px;border:none" src="clip0027.png"/></p>
+<p style="text-align: center;"><span class="f_ImageCaption" style="font-style: normal;"><a href="https://www.amazon.com/dp/B00CJG2ZYM?ref=ppx_yo2ov_dt_b_product_details&amp;th=1" target="_blank" class="weblink" title="USB extender">Amazon link</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Here is another adapter I have tested. It works well by grounding the CTS line using an external key.</p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img alt="usb-serial" width="250" height="184" style="margin:0 auto 0 auto;width:250px;height:184px;border:none" src="usb-serial.png"/></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><a href="https://www.amazon.com/gp/product/B07TXVRQ7V/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&amp;psc=1" target="_blank" class="weblink" title="Amazon link">Amazon link</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal; font-weight: bold;">Character based keying</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Character based keying does not require a separate port, it uses the standard RigPi Hub CAT port 30001. &nbsp;Port 3001 assumes you are using RigPi Account 1. &nbsp;Use port 30002 for account 2 and so on.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Send CW from one of several popular logging programs. &nbsp;The program must support Winkeyer-compatible keying. &nbsp;Set up a RigPi virtual port for this purpose at 1200 Baud. &nbsp;Connect to this port from the Winkeyer interface in the program you are using.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following programs have been tested using character based CW:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">CommCat (discontinued)</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">Ham Radio Deluxe/Digital Master</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">N1MM</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">WK3 Demo by K1EL</p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">Ham Radio Deluxe (character mode)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm that CW is working in RigPi. &nbsp;No special RigPi settings are required to use character mode remote CW. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start RigPi Hub and set up one virtual port for radio control at 38400 Baud and a second virtual port for CW at 1200 Baud. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start Ham Radio Deluxe using a Kenwood TS-2000 radio selection. Start DM780.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In DM780 Modes, select CW (WinKey). </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Winkey-&gt;Keyer settings, select the port you configured for 1200 Baud. &nbsp;Click Connect.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In DM780-&gt;Winkeyer-&gt;Speeds, remove the check in Track Changes, if there. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In DM780-&gt;Winkeyer-&gt;Keyer, click Test. &nbsp;The RigPi Keyer should send TEST DE DM. &nbsp;Close Winkeyer settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the CW functions in DM780 as you normally would. &nbsp;There is no sidetone when operating in this way. &nbsp;You can turn on your radio's sidetone and hear it through Mumble. The RigPi CW indicator in the lower right hand corner of the RigPi Hub window shows when CW is being sent. </p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">N1MM (character mode)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm that CW is working in RigPi. &nbsp;No special RigPi settings are required to use character mode remote CW. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start RigPi Hub and set up one virtual port for radio control at 38400 Baud and a second virtual port for CW at 1200 Baud. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start N1MM using a Kenwood TS-2000 radio selection.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Config-&gt;Configure Ports, set up a separate port for WinKeyer. &nbsp;Put a check in the WinKey box.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Config-&gt;Winkey, select Ignore Winkey Speed Pot.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Winkey-&gt;Keyer settings, select the port you configured for 1200 Baud. &nbsp;Click Connect..</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the CW functions in N1MM as you normally would. &nbsp;There is no sidetone when operating in this way. &nbsp;You can turn on your radio's sidetone and hear it through Mumble. The RigPi CW indicator in the lower right hand corner of the RigPi Hub window shows when CW is being sent. </p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">K1EL WK3 Demo (character mode)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm that CW is working in RigPi. &nbsp;No special RigPi settings are required to use character mode remote CW. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start RigPi Hub and set up a virtual port for CW at 1200 Baud. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start WK3 Demo..</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In Setup-&gt;Com Port Settings, select the virtual port you set up for 1200 Baud. &nbsp;Click Done.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Click the Open button to initialize the keyer.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the CW functions in WK3 Demo as you normally would. &nbsp;There is no sidetone when operating in this way. &nbsp;You can turn on your radio's sidetone and hear it through Mumble. The RigPi CW indicator in the lower right hand corner of the RigPi Hub window shows when CW is being sent. </p>
+<p class="p_Normal" style="margin: 0 0 0 52px;">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">CommCat (character mode)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">(Note: CommCat has been discontinued.)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Confirm that CW is working in RigPi. &nbsp;No special RigPi settings are required to use character mode remote CW. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start RigPi Hub and set up one virtual port for radio control at 38400 Baud and a second virtual port for CW at 1200 Baud. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Start CommCat using a Kenwood TS-2000 radio selection.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">In File-&gt;Settings-&gt;Radio/Ant-&gt;CW, select Winkeyer and the port you set up for 1200 Baud.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the CW functions in CommCat as you normally would. &nbsp;There is no sidetone when operating in this way. &nbsp;You can turn on your radio's sidetone and hear it through Mumble. The RigPi CW indicator in the lower right hand corner of the RigPi Hub window shows when CW is being sent. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Using the Radio Sidetone with Remote CW</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Many radios provide a sidetone while sending CW. &nbsp;It may be possible to send the sidetone from the radio to the remote Mumble. &nbsp;For example, the Icom IC-7300 provides this capability. &nbsp;To enable sidetone through the audio CODEC, go to MENU-&gt;SET-&gt;Connectors-&gt;ACC/USB AF Beep/Speech... Output and set the option to ON. &nbsp;You will want to set the option to OFF for speech operation. &nbsp;For other radios, check your manual and menu settings to see if this is possible.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Examples</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="border-color: #000000; border-style: solid; border-width: thin; border-top: none; border-right: none; border-left: none;"><span style="font-weight: bold;">Connect Remote RigPi (rigpi4.local) Keyer to Radio RigPi (radio4.local) Keyer, local network, character keying.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If you are using the Remote RigPi on the same LAN as the Radio RigPi, to prevent conflicts change the Hostname for the Remote RigPi to something else such as remote.local. &nbsp;Do this by using the RaspBerry Pi desktop and opening Terminal. &nbsp;In Terminal type sudo raspi-config. &nbsp;Go to System Options-&gt;Hostname and follow the instructions.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Remote RigPi (account 1) (note you can use any accounts you wish by adjusting the Rad Port numbers): </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp;RigPi Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;/dev/ttyS0 &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;Remote Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;30003 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;port for third account (30003)</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Radio IP &nbsp; &nbsp; &nbsp; &nbsp;172.16.0.62 &nbsp; &nbsp; &nbsp; &nbsp;Radio4.local Radio IP</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Radio RigPi (account 3)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp;RigPi Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;/dev/ttyS0</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;Radio Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;30003</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal" style="border-color: #000000; border-style: solid; border-width: thin; border-top: none; border-right: none; border-left: none;"><span style="font-weight: bold;">Connect USB CTS device, local network, element keying.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Radio RigPi (account 1): </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp;Externl CTS</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;/dev/serial/by-id/usb_USB_Serial-if00-port0 &nbsp; &nbsp; &nbsp; &nbsp;USB device</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Paddle Md &nbsp; &nbsp; &nbsp; &nbsp;Vibrobug</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;Radio Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;Empty &nbsp; &nbsp; &nbsp; &nbsp;(Ignore) &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Remote RigPi </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;N/A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No remote</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;N/A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No remote</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;N/A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No remote</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;N/A &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;No remote</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal" style="border-color: #000000; border-style: solid; border-width: thin; border-top: none; border-right: none; border-left: none;"><span style="font-weight: bold;">Connect two RigPi's, local network, element keying.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Remote RigPi (account 1)</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp;RigPi Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;/dev/ttyS0</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Paddle Md &nbsp; &nbsp; &nbsp; &nbsp;Vibrobug</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;Remote Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;30040 (acct 1) 30041 (acct2) ...</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Radio RigPi (account 1): </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Advanced Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer &nbsp; &nbsp; &nbsp; &nbsp;RigPi Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Port &nbsp; &nbsp; &nbsp; &nbsp;/dev/ttyS0</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Keyer Settings:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Paddle Md &nbsp; &nbsp; &nbsp; &nbsp;Vibrobug</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Keyer Fn &nbsp; &nbsp; &nbsp; &nbsp;Radio Keyer</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Rad Port &nbsp; &nbsp; &nbsp; &nbsp;30040 (acct 1) 30041 (acct2) ... &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>RigPi Station Server Version 4</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="cache-control" content="no-cache" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="helpman_settings.js"></script>
+  <script type="text/javascript" src="helpman_navigation.js"></script>
+  <script type="text/javascript" src="hmcontextids.js"></script>
+  <link type="text/css" href="default.css" rel="stylesheet" />
+
+  <style type="text/css">
+    html {
+      overflow: hidden;
+    }
+    body { 
+      margin:0;
+      padding:0;
+      height:100%;
+      overflow:hidden; 
+      background: #fff;
+    }
+    #hmheadbox {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      height: 130px;
+      background: #2C5D88;  /* Header blue background */
+      text-align: center;   /* Project title in header centered, for left-align, change to "left" */
+      vertical-align: top;  
+      }
+    #hmheadbox a {
+      display: inline-block;
+      margin: 10px;
+      }
+    #hmheadbox a.logo {  /* Your logo in the top-left corner  */
+      float: left;
+      max-height: 60px;
+      }
+    #hmheadbox span.title {  /* Project title in the header  */
+		display: inline-block;
+		margin-top: 0.5em;
+		margin-right: 32px; /* center title in header properly */
+		padding: 0;
+		font-size: 1.8em;
+		font-weight: bold;
+		color: #FFF;
+		white-space: nowrap;
+		max-width: 80%;
+		overflow: hidden;
+		text-overflow: ellipsis
+      }
+    #hmheadbox a.mobilemenu {  /* Mobile menu: change background-url to switch color */
+      float: left;
+      width: 16px;
+      height: 16px;
+      background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+      background-position: -112px -37px;
+      display: none;
+      }
+    #hmcontentslider {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 70px;
+      bottom: 0;     
+      border-top: thin solid #95B3CA; 
+    }
+	#hmcontentwrapper {
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+	 }
+    #hmsplitter { 
+      display: block; 
+    }
+    #navbar {    /* This is the small bar above TOC/index with 3 icons: TOC|Index|Search */
+      height: 60px;	
+    }
+    #navbar a {  /* Navigation buttons: change background-url to switch color */
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      margin: 10px 14px 0 10px;
+      background:url('hm_webhelp_buttons_white.png') top left no-repeat;
+	  opacity: 0.7;
+    } 
+	#navbar a.current {
+		opacity: 1.0;
+		cursor: default;
+	}
+    #navbar a:hover {
+      background:url('hm_webhelp_buttons_orange.png') top left no-repeat;
+      opacity: 1;
+    }
+	#navbar a.current:hover {
+	 background:url('hm_webhelp_buttons_white.png');
+	}
+    #navbar a.hmbtntoc    { background-position: -32px 0 !important}
+/*    #navbar a.hmbtnindex  { background-position: -64px 0 !important} leave off imdex*/
+    #navbar a.hmbtnsearch { background-position: -96px 0 !important}
+    a.mobilemenu { cursor: pointer; }
+    #hmnavbox {
+      position: absolute;
+      left: 0;
+      width: 29.7%;
+      min-width: 100px;
+      height: 100%;
+      }
+    #hmnavframe {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      right: 0;
+      bottom: 0;
+      }
+    #hmcontentbox {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 30%;      
+      background: #FFF;
+      border-left: 1px dashed #ccc;
+    }
+
+    iframe { left:0;top:0;width:100%;height:100%;border:none;background:#ffffff; }
+    #hmcontentbox iframe { position: absolute }
+	
+    /* This media query hides the navigation panel when window width <= 760px */
+    @media only screen and (max-width: 760px) {
+      #hmheadbox {
+         font-size: 70%;	   
+      }
+      #hmheadbox a.logo {  /* Your logo in the top-left corner  */
+         display: none;
+      }
+      #hmcontentslider { 
+        top: 35px;      /* when you change the header height, changes this as well */ 
+      right: 0;
+	  overflow-y: hidden;
+	  overflow-x: hidden;
+	  -webkit-overflow-scrolling: touch;
+	  }
+	  #hmcontentwrapper {
+	  overflow-y:hidden;
+	  width: 200%;
+	  }
+      #hmsplitter { 
+        display: none;
+      }
+      #hmnavbox { 
+	width: 50% !important;
+	left: 0;
+	bottom: 0;
+	overflow: auto;
+	}
+      #hmcontentbox { 
+	width: 50% !important;
+	left: 50% !important;
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	border: none;
+      }
+      #hmheadbox a.mobilemenu {
+	display: inline-block;
+	padding: 3px;
+      }
+      #hmheadbox span.title {  /* Project title in the header  */
+        margin-right: 0; /* center title in header properly */
+		margin-top: 2px;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+  var oldWwidth = $(window).width(), 
+      newWwidth = oldWwidth,
+      narrower = true; 
+  hmBrowser.iOS = !!(/iphone|ipad/i.test(navigator.platform));
+  
+  var currentNav = function(navPane) {
+	if (typeof navPane == "undefined") return;
+	
+	var $toc = $("a.hmbtntoc").first(),
+		$index = $("a.hmbtnindex").first(),
+		$search = $("a.hmbtnsearch").first();
+		
+	switch(navPane) {
+		case "toc":
+			$toc.addClass("current");
+			$index.removeClass("current");
+			$search.removeClass("current");
+		break;
+		case "index":
+			$toc.removeClass("current");
+			$index.addClass("current");
+			$search.removeClass("current");
+		break;
+		case "search":
+			$toc.removeClass("current");
+			$index.removeClass("current");
+			$search.addClass("current");
+		break;
+	} 
+  }
+   function showNav(value) {
+		var doShow = false,
+			shiftWidth = $("#hmcontentslider").width();
+	switch (value) {
+	case "toggle": 
+	    var navPos = $("#hmcontentslider").scrollLeft();
+	    doShow = (navPos > shiftWidth/2);
+	    break;
+	case "show":
+	    doShow = true;
+	    break;
+	case "hide":
+		doShow = false;
+		break;
+	}	    
+	if (doShow) { 
+	  $("#hmcontentslider").animate(
+		{scrollLeft: 0}, 500); 
+	}
+	else { 
+	  $("#hmcontentslider").animate(
+		{scrollLeft: shiftWidth}, 500);
+		}
+    }
+	
+  var manageScrollbar = function() {
+  var agent = navigator.userAgent;
+  if (/iphone|ipad/i.test(navigator.platform)) {
+	$("div#hmcontentslider").css("overflow-x","visible");
+	return;
+	} else {
+	$("div#hmnavbox").css("overflow","hidden");
+	}
+    if (isReduced && ((hmBrowser.touch && !/trident/i.test(agent) && !/edge/i.test(agent)) || (hmBrowser.touch && (/trident/i.test(agent) || /edge/i.test(agent)) && /mobile/i.test(agent)))) {
+		$("div#hmcontentslider").css("overflow-x","visible");
+		// alert("visible");
+		} else {
+		$("div#hmcontentslider").css("overflow","hidden");
+		//alert("hidden");
+		}
+  }
+  $(document).ready(function(){
+	$splitBar = $("#hmsplitter");
+	$navboxes = $("#hmcontentwrapper, #hmcontentslider, #hmnavbox, #hmcontentbox ");
+	isReduced = ($("#hmcontentslider").width() < $("#hmcontentwrapper").width());
+	$(window).on("resize", function() {
+	isReduced = ($("#hmcontentslider").width() < $("#hmcontentwrapper").width());
+        if (!hmSupportsAbspos()) {
+      	  hmNoAbsposResize($("#hmheadbox"), true, false);
+      	  hmNoAbsposResize($("#hmnavbox"), false, true);
+      	  hmNoAbsposResize($("#hmcontentbox"), true, true);
+          $(window).trigger("resize");
+	}
+	newWwidth = $(window).width();
+	narrower = newWwidth < oldWwidth;
+	oldWwidth = newWwidth;
+	if (isReduced) { 
+	  // Prevent endless multiple bindings... 
+	  // $("#hmcontent").off("load").on("load", function (){ showNav('hide');});
+		$splitBar.hide();
+		if ($("#hmcontentslider").scrollLeft() > 0 || narrower) {
+		if (!hmBrowser.iOS) 
+			$("div#hmcontentslider").css("overflow-x","visible");
+		$("#hmcontentslider").scrollLeft($("#hmcontentslider").width());
+		if (!hmBrowser.iOS) 
+			$("div#hmcontentslider").css("overflow-x","hidden");
+		}
+	}
+	else {
+	  $splitBar.show();
+	  // $("#hmcontent").off("load");
+	}
+      });
+	 hmCreateVSplitter($("#hmnavbox"),$("#hmcontentbox")); 
+	$("a.mobilemenu").first().on(hmBrowser.touchstart, function(){
+		showNav('toggle');
+		});	
+    $("div#navbar a[target='hmnavigation']").on("click",function(event){event.preventDefault()}).on(hmBrowser.touchstart,function(event){
+		event.preventDefault();
+		$("iframe#hmnavigation").attr("src",$(this).attr("href"));
+		});	
+	if (isReduced && (false || document.location.search !== "")) {
+		setTimeout(function(){
+		showNav('hide');
+		},300);
+		}
+		
+	manageScrollbar();
+	});
+	
+  </script>
+
+</head>
+<body>
+<!-- Begin of header  --> 
+<div id="hmheadbox">
+     <a class="logo" href="https://www.rigpi.net"><img src="rigpiico1.png" style="border:none" /></a>
+     <a class="mobilemenu" title="Show Navigation"></a>
+     <span class="title">RigPi Station Server Version 4</span>
+</div>
+<!-- end of header  --> 
+
+<div id="hmcontentslider">
+  <div id="hmcontentwrapper"> 
+  <div id="hmnavbox">
+    <!-- buttons to switch navigation panel --> 
+    <div id="navbar">
+         <a class="hmbtntoc" href="hmcontent.html" title="Table of Contents" target="hmnavigation"></a>
+	 
+	 <a class="hmbtnsearch" href="hmftsearch.html" title="Search" target="hmnavigation"></a>
+    </div>
+    <!-- the navigation panel -->
+    <div id="hmnavframe"> 
+      <iframe name="hmnavigation" id="hmnavigation" src="hmcontent.html" seamless="seamless" title="Navigation Pane" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div id="hmcontentbox" >
+    <script type="text/javascript">
+      var defaulttopic="introduction.html";
+      var query = window.location.search.substring(1), hash = window.location.hash, xssTest = /&#39;|&#x27;|&#34;|&#x22;|&quot;|&#61;|&#x3D;|%27|%22|%3d|:|&#58;|&#x3a;|=|%3a|3a;|58;|\/|'|"/i, cntxRX = /contextid=\d*/, cntxMatch = cntxRX.exec(query), cntxSrc = "";
+      if (query != "") {
+        if (typeof(hmGetContextId) != "undefined") {
+          if (cntxMatch != null) {
+	    cntxSrc = hmGetContextId(cntxMatch[0]);
+          };
+          if (cntxSrc != "") {
+            defaulttopic = cntxSrc;
+          } else {
+            if (!xssTest.test(query) && !xssTest.test(hash))
+               defaulttopic = query + hash;
+          }
+        }
+      }
+      document.write('<iframe name="hmcontent" id="hmcontent" src="'+defaulttopic+'" seamless="seamless" title="Content Page" frameborder="0"></iframe>');
+    </script>
+    <noscript>
+      <iframe name="hmcontent" id="hmcontent" src="introduction.html" seamless="seamless" title="Content Page" frameborder="0"></iframe>
+    </noscript>
+  </div>
+  </div>
+</div>
+</body>
+</html>
+

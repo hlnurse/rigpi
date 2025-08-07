@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RSS Connections &gt; Remote Connections</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Internet Access to your Raspberry Pi &nbsp;Port Forwarding &nbsp;The following instructions apply to a Netgear R8500 Router. The steps for your router will be different. &nbsp;Netgear route" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "remote-connections.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Remote Connections</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?remote-connections.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="rss-connections.html">RSS Connections</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Remote Connections</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="internet-service.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="rss-connections.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="using-a-dynamic-dns-service.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span style="font-size: 16px; font-weight: bold;">Internet Access to your Raspberry Pi</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16px; font-weight: bold;">Port Forwarding</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The following instructions apply to a Netgear R8500 Router. The steps for your router will be different.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">Netgear routers do port forwarding by assigning port numbers to a &quot;service&quot; that is associated with the application you want to run.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span class="f_ImageCaption" style="font-style: normal;">To open the ports for RSS:</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">1.</span><span class="f_ImageCaption" style="font-style: normal;">Type the router's address in an Internet browser's address bar. (By default the router's address is 192.168.0.1 or 192.168.1.1). The Setup Wizard appears</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">2.</span><span class="f_ImageCaption" style="font-style: normal;">Enter the router's username and password</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">3.</span><span class="f_ImageCaption" style="font-style: normal;">Under Advanced, click Advanced Setup, then Port Forwarding on the left menu bar (varies slightly by Router)</span></p><p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;<span class="f_ImageCaption" style="font-style: normal;">A Port Forwarding Screen appears </span></p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">4.</span><span class="f_ImageCaption" style="font-style: normal;">Click Add Custom Service. The Custom Services window opens</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">5.</span><span class="f_ImageCaption" style="font-style: normal;">Enter </span><span class="f_ImageCaption" style="font-style: normal; font-weight: bold;">RSS</span><span class="f_ImageCaption" style="font-style: normal;"> for the service name</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">6.</span><span class="f_ImageCaption" style="font-style: normal;">Select TCP in the Service Type drop-down</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">7.</span><span class="f_ImageCaption" style="font-style: normal;">Enter 7488 in the External Starting Port box</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">8.</span><span class="f_ImageCaption" style="font-style: normal;">Enter 7488 in the External Ending Port box</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">9.</span><span class="f_ImageCaption" style="font-style: normal;">Remove the check for Use the same port range for Internal Port</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">10.</span><span class="f_ImageCaption" style="font-style: normal;"> Enter 80 in Internal Starting Port</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">11.</span><span class="f_ImageCaption" style="font-style: normal;"> Enter 80 in Internal Ending Port</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">12.</span><span class="f_ImageCaption" style="font-style: normal;"> Enter the LAN IP for RSS in the Internal IP address</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">13.</span><span class="f_ImageCaption" style="font-style: normal;"> Click Apply</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">14.</span><span class="f_ImageCaption" style="font-style: normal;"> To add </span><span class="f_ImageCaption" style="font-style: normal; font-weight: bold;">Port Forwarding for Mumble</span><span class="f_ImageCaption" style="font-style: normal;">, click Add Custom Service and follow the same steps</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">15.</span><span class="f_ImageCaption" style="font-style: normal;"> Use Mumble for the name. TCP/UDP for the type and 64638 in the External Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">16.</span><span class="f_ImageCaption" style="font-style: normal;"> Enter 64738 in the Internal Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">17.</span><span class="f_ImageCaption" style="font-style: normal;"> Enter the LAN IP for RSS in the Internal IP address</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">18.</span><span class="f_ImageCaption" style="font-style: normal;"> Click Apply</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">19.</span><span class="f_ImageCaption" style="font-style: normal;">To add </span><span class="f_ImageCaption" style="font-style: normal; font-weight: bold;">remote VNC viewer</span><span class="f_ImageCaption" style="font-style: normal;"> access to open RSS Desktop, click Add Custom Service and follow the same steps</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">20.</span><span class="f_ImageCaption" style="font-style: normal;">Use VNC for the name. TCP for the type and 5900 in the External Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">21.</span><span class="f_ImageCaption" style="font-style: normal;">Enter 5900 in the Internal Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">22.</span><span class="f_ImageCaption" style="font-style: normal;">Enter the LAN IP for RSS in the Internal IP address</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">23.</span><span class="f_ImageCaption" style="font-style: normal;">Click apply</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">24.</span><span class="f_ImageCaption" style="font-style: normal;">To add access to the </span><span class="f_ImageCaption" style="font-style: normal; font-weight: bold;">RigPi Video Camera</span><span class="f_ImageCaption" style="font-style: normal;">, click Add Custom Service and follow the same steps</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">25.</span><span class="f_ImageCaption" style="font-style: normal;">Use VideoCamera for the name. TCP for the type and 8081 in the External Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">26.</span><span class="f_ImageCaption" style="font-style: normal;">Enter 8081 in the Internal Port boxes</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">27.</span><span class="f_ImageCaption" style="font-style: normal;">Enter the LAN IP for RSS in the Internal IP Address</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">28.</span><span class="f_ImageCaption" style="font-style: normal;">Click Apply</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_ImageCaption" style="display:inline-block;width:20px;margin-left:-20px">29.</span><span class="f_ImageCaption" style="font-style: normal;"> Click Logout to exit from router settings</span></p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 44px;"><span class="f_ImageCaption" style="font-style: normal;">With RSS running, open canyouseeme.org with your browser and confirm that ports 5900, 7488, 8081 and 64638 are open.</span></p>
+<p class="p_Normal" style="margin: 0 0 0 44px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 44px;"><span class="f_ImageCaption" style="font-style: normal;">To connect to RSS using a browser when away from home, enter the WAN IP (from SETTINGS&gt;System) followed by a colon and 7488:</span></p>
+<p class="p_Normal" style="margin: 0 0 0 44px;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center; margin: 0 0 0 44px;"><span class="f_ImageCaption" style="font-style: normal;">97.222.46.198:7488</span></p>
+<p class="p_Normal" style="margin: 0 0 0 44px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 44px;"><span class="f_ImageCaption" style="font-style: normal;">The WAN IP above is fictitious, use your own. Now you can log in and control your radio from anywhere Internet access is available.</span></p>
+<p class="p_Normal" style="margin: 0 0 0 44px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 44px;"><span class="f_ImageCaption" style="font-style: normal;">To connect Mumble on your remote client, open the Edit window for the rigpi server connection and change the port to 64638.</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16px; font-weight: bold;">Important Port Forwarding Note</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Some Internet Service Providers supply a Modem that contains a single-port router. If you use an external router with such a device, port forwarding will not work without extra settings. Here is an article on the web that explains the 2-router problem. If port forwarding doesn't appear to work for you, please read this a</p>
+<p class="p_Normal" style="text-align: center;"><span style="color: #0000ff; text-decoration: underline;"><a href="https://portforward.com/help/doublerouterportforwarding.htm" target="_blank" class="weblink">Click to Go to PortForwarding.com</a></span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal">Note: Port Forward is an excellent resource for help if you run into trouble with port forwarding. They also sell programs to aid with the process. Most port forwarding issues can be solved without the need for other programs.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16px; font-weight: bold;">ZeroTier</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">ZeroTier is a software-defined networking (SDN) solution that allows you to create and manage virtual private networks (VPNs) easily. It enables devices across the internet to communicate securely as if they were on the same local network. By using ZeroTier you do not need to set up Port Forwarding through your router. ZeroTier is installed on RigPPi.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Here’s a more detailed overview of what ZeroTier is and its key features:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Key Features of ZeroTier</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Peer-to-Peer Networking: ZeroTier creates direct peer-to-peer connections between devices, reducing latency and improving performance compared to traditional VPN solutions that route all traffic through a central server.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Cross-Platform Support: ZeroTier runs on a wide range of operating systems, including Windows, macOS, Linux, iOS, Android, and various embedded systems like Raspberry Pi.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Ease of Use: Setting up a ZeroTier network is straightforward. You can create and join networks with just a few commands or clicks, and management is done through a web-based interface called ZeroTier Central.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Security: ZeroTier uses end-to-end encryption to secure all data transmitted between devices on the network. This ensures privacy and security, even over untrusted networks like the internet.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">5.</span>Flexibility: You can configure ZeroTier networks to behave like traditional LANs, with support for custom IP addressing, multicast, and broadcast traffic. This makes it suitable for a wide range of use cases, from simple remote access to complex network topologies.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">6.</span>Scalability: ZeroTier networks can scale from small personal networks to large enterprise deployments. The system is designed to handle a large number of nodes with minimal configuration effort.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">7.</span>Open Source: The core of ZeroTier is open source, which means you can review the code, contribute to its development, and even deploy your own ZeroTier controllers if desired.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>How ZeroTier Works</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Network Creation: You create a network in the ZeroTier Central web interface. This network gets a unique network ID.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>Joining a Network: Devices (nodes) join the network using the ZeroTier client software and the network ID. Once a node joins, it appears in the ZeroTier Central interface.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>Authorization: Each new node must be authorized in the ZeroTier Central interface before it can fully participate in the network. This step ensures that only approved devices can connect.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Communication: Once authorized, nodes establish direct peer-to-peer connections with each other, and all traffic between them is encrypted.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">5.</span>Management: Network settings, such as IP address assignments, access rules, and routing policies, are managed through ZeroTier Central.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Setting up ZeroTier on a Raspberry Pi is a straightforward process that allows you to create a virtual network for secure, private connections over the internet. Here’s a step-by-step guide to get you started:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span> Prerequisites</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>A Raspberry Pi running a recent version (Bullseye) of Raspberry Pi OS</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>An internet connection</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>A ZeroTier account (you can create one for free on the ZeroTier website: </p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><a href="https://www.zerotier.com/" target="_blank" class="weblink">https://www.zerotier.com/</a></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The ZeroTier client is already installed on RigPi 4</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Join a ZeroTier Network**</p><p class="p_Normal" style="margin: 0 0 0 13px;">Replace `&lt;network_id&gt;` with your actual ZeroTier network ID using Terminal:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">   &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-style: italic;">sudo zerotier-cli join &lt;network_id&gt;</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Authorize the Device</p><p class="p_Normal" style="margin: 0 0 0 13px;">Go to the ZeroTier Central (<a href="https://my.zerotier.com/" target="_blank" class="weblink">https://my.zerotier.com/</a>) web console, log in with your ZeroTier account, and find your network. You should see your Raspberry Pi listed as a member with a unique ID. You need to authorize this device by checking the box next to its entry.</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Verify the Connection</p><p class="p_Normal"> &nbsp; To check if your Raspberry Pi is connected to the ZeroTier network, run:</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-style: italic;">   &nbsp; &nbsp; &nbsp; &nbsp; sudo zerotier-cli listnetworks</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"> &nbsp; You should see your network listed with a status indicating it is `OK`.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Additional Tips</p><p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">Persistent Network Configuration: Ensure your ZeroTier service starts on boot by enabling the service:</p>
+<p class="p_Normal" style="margin: 0 0 0 13px;">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-style: italic;">sudo systemctl enable zerotier-one</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Firewall and Security: Ensure that your Raspberry Pi’s firewall allows ZeroTier traffic. If using `ufw` (Uncomplicated Firewall), you can allow ZeroTier traffic with:</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-style: italic;">sudo ufw allow 9993/udp</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Check ZeroTier Status: To check the status of ZeroTier service:</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-style: italic;">sudo systemctl status zerotier-one</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Troubleshooting: If you encounter any issues, check the ZeroTier logs for clues:</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="width:48px;display:inline-block">&nbsp;</span><span style="font-style: italic;">sudo journalctl -u zerotier-one</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">By following these steps, your Raspberry Pi should be successfully connected to your ZeroTier network, allowing you to securely access it from anywhere as if it were on a local network.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold;">Remote RigPi Clients</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RSS can be accessed from anywhere via the Internet. Access is made available through RSS and router settings. All user accounts should be password protected before you allow any access.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">RigPi provides 4 ways for remote access. </p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">1.</span>Browser: Any browser (desktop, phone, tablet) can be used to access RigPi from a remote location. Audio is provided through a separate Mumble Clients running at the RSS station and remote locations.</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">2.</span>RealVNC: This option provides access to the Raspberry Pi desktop. &nbsp;You can use the desktop browser to control your radio. &nbsp;</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">3.</span>RigPi Hub on a Windows computer: The Hub connects to RigPi using port 30001. &nbsp;With RigPi Hub you can use your favorite logging program to control RigPi.</p><p class="p_Normal" style="text-indent: 0; padding-left: 20px; margin-left: 0;"><span class="f_Normal" style="display:inline-block;width:20px;margin-left:-20px">4.</span>Link another RigPi: Use a second RigPi at the remote location to connect to your home RigPi.</p><p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">All connection options require port forwarding unless you are using ZeroTier. Up to six ports must be opened: 1) browser; 2) audio VoIP; 3) VNC viewer 4) Video Camera (optional); 5) RigPi Hub/Linked RigPi port; 6) Remote CW. &nbsp;By using a service such as ZeroTier, it is not necessary to open any ports on your router. <a href="zerotier.html" class="topiclink" title="ZeroTier instructions">ZeroTier</a> is installed on RigPi but must be configured.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:400px; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Service</span></p>
+</th>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Normal Port</span></p>
+</th>
+<th style="vertical-align:top; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Protocol</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">RSS Browser access</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">80</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">TCP</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">Mumble (VoIP)</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">64738</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">TCP/UDP</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">VNC</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">5900</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">TCP</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">Video Camera</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">8081</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">TCP</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">Remote CW</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">30040</p>
+</td>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_Normal" style="text-align: center;">UDP</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal">Browsers, by default, connect to port 80 on a server. This access port must not be blocked by a router or firewall. Your router's advanced settings provides a way to forward connections from the outside to a specific LAN IP and port. &nbsp;Firewall configuration is avaialble through the operating system settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The LAN IP for RSS can be found on the System settings page (SETTINGS&gt;System). It will be an address like 192.168.1.20. The RSS browser, Mumble, VNC and Video Camera ports must be able to transverse your router to get to these ports, otherwise they are blocked. This is called Port Forwarding.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Many routers provide a way to translate an incoming port to a different port. This translation provides a slightly higher level of security than simply forwarding port 80. Set the External Starting and Ending port to something like 7488. Set the Internal Starting and Ending ports to 80. Your router will now accept an incoming connection on port 7488 and forward it to port 80 on rigpi4.local. When away from home you would instruct your browser to connect to port 7488. If your router does not provide port translation, open port 80 instead and you will connect to the default browser port, 80.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">The default Mumble port is 64738. This port must be forwarded through your router. You can use the same translation trick as with browser connections, but you must also tell the mumble client which port to use if not the default. &nbsp;Mumble data are encrypted.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">VNC Viewer gives you access to the RSS Desktop from any device. &nbsp;VNC Viewer clients are available for most operating systems and devices. &nbsp;To use VNC Viewer from a remote location you must forward the port used by VNC. &nbsp;The default port for VNC viewer is 5900.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16px; font-weight: bold;">Password Protection</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Since RSS is now open to the Internet, add passwords to all accounts before proceeding.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><a id="remote" class="hmanchor"></a><span style="font-size: 19px; font-weight: bold;">RigPi Remote Linked Connections</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Use the Link capabilities of RigPi to connect a second RigPi or another program such as WSJT-X to your Home RigPi.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Rather than using a remote computer or device to connect to (Home) RigPi, you can use a second (Remote) RigPi. &nbsp;Set up Home to control your radio, rotor and keyer. &nbsp;Set up Remote using the Home IP and Port in the Remote-&gt;Advanced Radio-&gt;R Port and Remote-&gt;Keyer-&gt;Port boxes. Use the Hamlib Home-&gt;Advanced Settings-&gt;Manuf and Net rigctl in Model. &nbsp;For Rotor, use Hamlib for Home-&gt;Rotor-&gt;Manuf and Net rotctl Rotor in Remote. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">if Remote is using the same LAN as Remote, the Home IP &nbsp;is found in Home-&gt;System Settings-&gt;LAN IP 1. &nbsp;If connecting from another location, use Home-&gt;System Settings-&gt;WAN IP. &nbsp;Use Home-&gt;System Settings-&gt;Rigctl Port for the Remote port. &nbsp;Use the same IP and Port + 1 in Rotor Settings.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">If Remote is at another location, you must forward the port you are using at home. &nbsp;For example, if you are using Account 1, the radio control port is 4532. &nbsp;Port 4532 must be forwarded through your Home router. &nbsp;If you want to use audio, the Mumble port must be forwarded, as well as the VNC port if desired. &nbsp;It is not necessary to forward port 80 in your Home router if you are using a Remote RigPi using port 4532.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span style="font-size: 16px; font-weight: bold;">Same Network</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:500px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Remote RigPi</span></p>
+<p class="p_Normal" style="text-align: center;">My Living Room</p>
+</td>
+<td style="vertical-align:middle; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">—LAN—</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Home RigPi</span></p>
+<p class="p_Normal" style="text-align: center;">My Shack</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span style="font-size: 16px; font-weight: bold;">Separate Networks</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:500px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Remote RigPi</span></p>
+<p class="p_Normal" style="text-align: center;">My Vacation Home</p>
+</td>
+<td style="vertical-align:middle; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">—Internet—</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Home RigPi</span></p>
+<p class="p_Normal" style="text-align: center;">My Shack</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; width:600px; border:none; border-spacing:0;">
+<thead>
+<tr>
+<th style="vertical-align:top; width:104px; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Connection</span></p>
+</th>
+<th style="vertical-align:top; width:70px; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Home RigPi</span></p>
+</th>
+<th style="vertical-align:top; width:122px; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Remote RigPi on same LAN network</span></p>
+</th>
+<th style="vertical-align:top; width:107px; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Remote RigPi on separate network</span></p>
+</th>
+<th style="vertical-align:top; width:149px; background-color:#CCFFCC; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 19px; font-weight: bold;">Notes</span></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Radio Control Port</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">USB to radio</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;Home LAN ip&gt;:80</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;WAN ip&gt;:80</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Browsers can connect using port 80 or WAN &lt;ip&gt;* to any RigPi. Port 80 must be forwarded in your Home router when accessing RigPi from a remote location.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Remote RigPi</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">USB to Radio</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;Home LAN ip&gt;:4532</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;WAN ip&gt;:4532</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Connect a Remote RigPi direct, not through a browser. Port 4532 must be forwarded in your router.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">RigPi Keyer</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">/dev/ttyS0</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;Home LAN ip&gt;:3000&lt;n&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;WAN ip&gt;:3000&lt;n&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;n&gt; is the account number for the Home RigPi. &nbsp;If your radio is connected to the first account, use &lt;LAN ip&gt;:30001 or &lt;WAN ip&gt;:30001. The port must be forwarded.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">RigPi CAT CW Keyer</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Select CAT plus &lt;port&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Select CAT plus &lt;Home LAN ip&gt;:&lt;port&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Select CAT plus &lt;WAN ip&gt;:&lt;port&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;port&gt; is the radio control port for Home. &nbsp;Your radio must support CW keying via CAT. &lt;port&gt; must be forwarded.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">RigPi Rotor</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">USB to rotor</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;Home LAN ip&gt;:&lt;n&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;WAN ip&gt;:&lt;n&gt;</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">The rotor control port &lt;n&gt; is always the radio 4531 + 2 * account number. This port must be forwarded.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:104px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">Mumble</span></p>
+</td>
+<td style="vertical-align:top; width:70px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">rigpi4.local</span></p>
+</td>
+<td style="vertical-align:top; width:122px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">rigpi4.local</span></p>
+</td>
+<td style="vertical-align:top; width:107px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;ip&gt;</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">i.e.,</span></p>
+<p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">207.55.33.22</span></p>
+</td>
+<td style="vertical-align:top; width:149px; height:70px; padding:5px; border:none"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">&lt;ip&gt; = IP address of Home WAN* on port 64738. This port must be forwarded.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><span style="font-size: 16px;">*Port Forwarding in your Router is required for WAN &lt;port&gt;</span></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal"><span style="font-size: 16px;">For further trouble-shooting help, see <a href="troubleshooting.html#rigpiremote" class="topiclink">here</a>.</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

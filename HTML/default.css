@@ -1,0 +1,261 @@
+/* Text Styles */
+hr { color: #000000 }
+body, table, tr, th /* Normal */
+{
+ font-size: 15px;
+ font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_BodyText /* Body Text */
+{
+}
+span.f_Callouts /* Callouts */
+{
+ font-size: 13px;
+ font-family: Verdana,Geneva,Arial,sans-serif;
+ letter-spacing: -1px;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 13px;
+ font-family: 'Courier New',Courier,monospace;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 21px;
+ font-weight: bold;
+ color: #ffffff;
+}
+span.f_Heading1Black /* Heading1 Black */
+{
+ font-size: 21px;
+ font-weight: bold;
+}
+span.f_Heading2 /* Heading2 */
+{
+ font-size: 19px;
+ font-weight: bold;
+}
+span.f_Heading3 /* Heading3 */
+{
+ font-size: 16px;
+ font-weight: bold;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-style: italic;
+}
+span.f_Notes /* Notes */
+{
+ font-style: italic;
+}
+span.f_NotesBox /* NotesBox */
+{
+ font-style: italic;
+}
+span.f_PopupBox /* Popup Box */
+{
+ font-size: 12px;
+}
+span.f_SeeAlso /* SeeAlso */
+{
+ font-size: 16px;
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+}
+span.f_T_Code /* T_Code */
+{
+ font-family: 'Courier New',Courier,monospace;
+ letter-spacing: -1px;
+}
+span.f_T_Emphasis /* T_Emphasis */
+{
+ font-size: 13px;
+ font-weight: bold;
+}
+span.f_T_Entry /* T_Entry */
+{
+ font-family: 'Courier New',Courier,monospace;
+ font-weight: bold;
+ letter-spacing: -1px;
+}
+span.f_T_Entry10pt /* T_Entry 10pt */
+{
+ font-size: 13px;
+ font-family: 'Courier New',Courier,monospace;
+ font-style: italic;
+ font-weight: bold;
+ letter-spacing: -1px;
+}
+span.f_T_Menu /* T_Menu */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+}
+span.f_T_Menu10p /* T_Menu 10p */
+{
+ font-family: 'Segoe UI Semibold',Tahoma,Verdana,Arial,sans-serif;
+}
+span.f_TipBody /* Tip Body */
+{
+ font-family: Verdana,Geneva,Arial,sans-serif;
+ letter-spacing: -1px;
+}
+span.f_TipHeading /* Tip Heading */
+{
+ font-family: Tahoma,Geneva,Verdana,sans-serif;
+ font-weight: bold;
+}
+/* Paragraph styles */
+p, p.p_Normal, div.p_Normal, li.p_Normal /* Normal */
+{
+ text-align: left;
+ text-indent: 0;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_BodyText /* Body Text */
+{
+ font-size: 15px;
+ margin: 0 0 10px 0;
+}
+.p_Callouts /* Callouts */
+{
+ font-size: 13px;
+ margin: 0 0 5px 0;
+}
+.p_CodeExample /* Code Example */
+{
+ font-size: 13px;
+ line-height: 1.0;
+ white-space: nowrap;
+}
+.p_Comment /* Comment */
+{
+ font-size: 15px;
+ text-align: center;
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading1Black /* Heading1 Black */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading2 /* Heading2 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_Heading3 /* Heading3 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0;
+ page-break-after: avoid;
+ padding: 0 0 0 0;
+ margin: 0 0 0 0;
+}
+.p_ImageCaption /* Image Caption */
+{
+ font-size: 15px;
+}
+.p_Notes /* Notes */
+{
+ font-size: 15px;
+}
+.p_NotesBox /* NotesBox */
+{
+ font-size: 15px;
+ margin: 10px 0 0 0;
+}
+.p_PopupBox /* Popup Box */
+{
+ font-size: 12px;
+}
+.p_SeeAlso /* SeeAlso */
+{
+ font-size: 16px;
+ page-break-after: avoid;
+ margin: 10px 0 0 0;
+}
+.p_TipBody /* Tip Body */
+{
+ font-size: 15px;
+}
+.p_TipHeading /* Tip Heading */
+{
+ font-size: 15px;
+}
+/* Table styles */
+div.hmrotate90  { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; }
+div.hmrotate270 { display:inline-block; -webkit-writing-mode: vertical-rl; -ms-writing-mode: tb-rl; writing-mode: vertical-rl; transform: rotate(180deg); }
+
+
+
+#hmpopupdiv /* used for javascript text popups */
+{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  padding: 6px;
+  border:1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #888;
+}
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}
+
+a.dropdown-toggle /* dropdown toggle caption */
+{
+  cursor: pointer;
+}
+a.inline-toggle /* inline toggle caption */
+{
+  cursor: pointer;
+}
+img.dropdown-toggle-icon /* toggle icon */
+{
+  cursor: pointer;
+}
+/* CSS for responsive image maps */
+
+.hmImageMap a.hmHotspotRect { display:block; position:absolute; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1)  }
+.hmImageMap a.hmHotspotEllipse { display:block; position:absolute; border-radius:50%; border: 1px solid transparent; background:#000; opacity:0.01; filter:alpha(opacity=1) }
+.hmImageMap:hover a.hmHotspotRect {opacity:0.3; filter:alpha(opacity=30); }
+.hmImageMap:hover a.hmHotspotEllipse { opacity:0.3; filter:alpha(opacity=30); }
+a.hmHotspotRect:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
+a.hmHotspotEllipse:hover { border:1px solid #000; background:#FFF; opacity:0.3; filter:alpha(opacity=30) }
