@@ -1,0 +1,47 @@
+/*!
+ * calendarJs JavaScript Library v1.0
+ * https://github.com/martini224/calendarJs
+ *
+ * Includes bootstrap.css
+ * https://getbootstrap.com/
+ *
+ * Copyright Martin Rouffiange (martini224) 2018
+ * Released under the MIT license (http://opensource.org/licenses/MIT)
+ */
+
+#calendar-container{
+    padding: 25px;
+}
+
+#calendar-container table{
+    font-size: 24px;
+    text-align: center;
+}
+
+#calendar-container table th{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#calendar-container table thead th{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#calendar-container table tbody td{
+    color : #636363;
+    cursor : pointer;
+}
+
+#calendar-container .now{
+    color : white;
+    background-color: #51c1ff;
+}
+
+#calendar-container .td-hidden{
+    visibility: hidden;
+}
+
+.flex-container{
+    display: flex;
+}

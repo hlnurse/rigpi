@@ -1,0 +1,19 @@
+<!--used in settings, settingsadvanced and system	-->    
+        <div class="modal fade" id="myModalCAlert" tabindex="0">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modalC-title"></h1><button type="button" class="close" id = "closeModal" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body" id="modalC-body"></div>
+                 <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="modalAlertClose" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-info" id="modalAlertOK">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>

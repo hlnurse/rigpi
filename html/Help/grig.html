@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Other Programs &gt; Grig</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="Grig is a simple graphical user interface (GUI) for controlling radios using the Hamlib radio control library. It provides an easy way to interact with supported transceivers..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "grig.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Grig</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?grig.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="chapter-2.html">Other Programs</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Grig</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="flic-switch.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="chapter-2.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="js8call.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<div class="p_Normal" style="text-align: center; margin: 14px 0 0 0;"><div style="margin:0 auto 0 auto;width:60%;max-width:866px;height:auto;"><img alt="2025-02-11_09-15-25" style="width:100%;height:auto;border:none" src="2025-02-11_09-15-25.png"/></div></div>
+<p class="p_Normal" style="margin: 14px 0 0 0;"><a id="grig" class="hmanchor"></a><span style="font-weight: bold;">Grig</span> is a simple graphical user interface (GUI) for controlling radios using the <span style="font-weight: bold;">Hamlib</span> radio control library. It provides an easy way to interact with supported transceivers via a computer, allowing users to adjust frequency, mode, and other settings.</p>
+<h3 class="p_Heading3" style="page-break-after: avoid; margin: 19px 0 0 0;"><span class="f_Heading3" style="font-size: 15px;">Key Features of Grig:</span></h3>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Supports <span style="font-weight: bold;">Hamlib</span>, which enables control of many different radios.</p><p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Provides a <span style="font-weight: bold;">lightweight</span> and <span style="font-weight: bold;">easy-to-use</span> GUI.</p><p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Allows <span style="font-weight: bold;">basic rig control</span> functions such as frequency tuning, mode selection, and PTT (Push-to-Talk) control.</p><h3 class="p_Heading3" style="page-break-after: avoid; margin: 19px 0 0 0;"><span class="f_Heading3" style="font-size: 15px;">Use Cases:</span></h3>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Digital Modes</span>: Works with software like RigPi FLDigi and WSJT-X.</p><p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Remote Operation</span>: Control your transceiver from a different location.</p><p style="text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Automation &amp; Logging</span>: Helps integrate with logging software for contesting or general QSO logging.</p><p class="p_Normal" style="margin: 14px 0 0 0;">You can start <span style="font-weight: bold;">Grig</span> from the Raspberry Pi Run menu with optional parameters to customize its behavior. Here are the key parameters:</p>
+<h3 class="p_Heading3" style="page-break-after: avoid; margin: 19px 0 0 0;"><span class="f_Heading3" style="font-size: 15px;">Basic Usage:</span></h3>
+<p class="p_CodeExample" style="margin: 19px 0 0 0;"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CodeExample" style="font-size: 15px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;">grig&nbsp;[options]</span></p>
+<h3 class="p_Heading3" style="page-break-after: avoid; margin: 19px 0 0 0;"><span class="f_Heading3" style="font-size: 15px;">Common Parameters:</span></h3>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 19px 0 0 0;"><table style="border:none; border-spacing:2px;">
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p style="text-align: center;"><span style="font-weight: bold;">Option</span></p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p style="text-align: center;"><span style="font-weight: bold;">Description</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-m &lt;model&gt;</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Sets the radio model number (as defined in Hamlib).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-r &lt;device&gt;</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Specifies the serial port or IP address (e.g., /dev/ttyUSB0 or 192.168.1.100).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-s &lt;baud&gt;</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Sets the serial baud rate (e.g., 9600, 115200).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-c &lt;id&gt;</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Specifies the radio configuration string.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-d</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Enables debug output.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:146px; padding:1px; border:none"><p>-h</p>
+</td>
+<td style="vertical-align:middle; width:554px; padding:1px; border:none"><p>Displays help information.</p>
+</td>
+</tr>
+</table>
+</div>
+<h3 class="p_Heading3" style="page-break-after: avoid; margin: 19px 0 0 0;"><span class="f_Heading3" style="font-size: 15px;">Example Commands:</span></h3>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-weight:bold;display:inline-block;width:20px;margin-left:-20px">1.</span><span style="font-weight: bold;">Start Grig with an Icom IC-7300 connected via USB:</span></p><p class="p_CodeExample"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CodeExample" style="font-size: 15px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;">grig&nbsp;-m&nbsp;3073&nbsp;-r&nbsp;/dev/ttyUSB0</span></p>
+<p style="text-indent: 0; padding-left: 20px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-weight:bold;display:inline-block;width:20px;margin-left:-20px">2.</span><span style="font-weight: bold;">Enable debugging output:</span></p><p class="p_CodeExample"><span style="width:48px;display:inline-block">&nbsp;</span><span class="f_CodeExample" style="font-size: 15px; font-family: 'Segoe UI',Tahoma,Verdana,Arial,sans-serif;">grig&nbsp;-d</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

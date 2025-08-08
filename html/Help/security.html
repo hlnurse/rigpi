@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RigPi Introduction &gt; Security</title>
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="One of the primary uses for RigPi is to allow you to control your station when you are away from home. &nbsp;Remote control requires that you open paths through your router to allow..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #2C5D88; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 158px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: 4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("RigPi.html", "security.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Security</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="RigPi.html?security.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      <a href="introduction.html">RigPi Introduction</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1" style="page-break-after: avoid;"><span class="f_Heading1">Security</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="rss-on-mobile-deviices.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="introduction.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="passwords.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      <a id="printbuttonlink" onclick=";$('div#idcontent').css('margin-top', '1em');window.print();$('#idcontent').css('margin-top', $('#idheader').height());" title="Print"><span class="hmbtnprint"></span></a>
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">One of the primary uses for RigPi is to allow you to control your station when you are away from home. &nbsp;Remote control requires that you open paths through your router to allow incoming data to establish a connection with RigPi. &nbsp;Without further safeguards RigPi's password/account system is open to malicious attack that could render your RigPi useless.</p>
+<p class="p_Normal">&nbsp;</p>
+<p>While RigPi is technically capable to operate remotely across public networks like the Internet, it's design and development to date has been focused on use within trusted private networks (home and/or VPN.)  </p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>RigPi was tested with the Joval vulnerability scanner and no vulnerabilities were found.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 52px;"><span style="color: #0000ff; text-decoration: underline;"><a href="https://jovalcm.com/topics/open-source-oval-scanner/" target="_blank" class="weblink">https://jovalcm.com/topics/open-source-oval-scanner/</a></span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal"><span style="font-weight: bold;">OpenVPN</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">A technology called OpenVPN is one way to increase protection since it uses an encrypted key at both ends of a connection to prevent others who don't have the key from invading your system.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">Two links to sites that show simple ways to install OpenVPN on the RigPi server are listed below:</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="margin: 0 0 0 52px;"><span style="color: #0563c1; text-decoration: underline;"><a href="http://www.pivpn.io/" target="_blank" class="weblink">http://www.pivpn.io/</a></span></p>
+<p style="margin: 0 0 0 52px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 52px;"><span style="color: #0563c1; text-decoration: underline;"><a href="https://www.youtube.com/watch?v=04EmeXSZo_0" target="_blank" class="weblink">https://www.youtube.com/watch?v=04EmeXSZo_0</a></span></p>
+<p style="margin: 0 0 0 52px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>The two approaches are similar, use either one.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold;">Fail2ban</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p>Fail2ban is installed on RigPi to help prevent intrusions.  <span style="background-color: #ffffff;">Fail2ban attempts to alleviate attacks by providing an automated way of not only identifying possible break-in attempts, but acting upon them quickly and easily in a user-definable manner. &nbsp;Please Google Fail2ban for more details.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">The maximum number of failed attempts and the length of time an associated IP is blocked can be set in Fail2ban. &nbsp;RigPi allows three failed attempts after which the IP is blocked for one hour. &nbsp;When one hour has lapsed the block is removed. &nbsp;Fail2ban protects five services in RigPi:</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="margin: 0 0 0 52px;"><span style="background-color: #ffffff;">RigPi Web access</span></p>
+<p style="margin: 0 0 0 52px;"><span style="background-color: #ffffff;">Mumble</span></p>
+<p style="margin: 0 0 0 52px;"><span style="background-color: #ffffff;">PhpMyadmin</span></p>
+<p style="margin: 0 0 0 52px;"><span style="background-color: #ffffff;">Web bots</span></p>
+<p style="margin: 0 0 0 52px;"><span style="background-color: #ffffff;">SSH access</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">Real VNC provides its own intrusion protection so it is not necessary to use Fali2ban for this purpose.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; background-color: #ffffff;">UFW</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal">The UFW firewall is included with RigPi as an added security measure. &nbsp;It can be enabled or disabled. See the <a href="ufw-firewall.html" class="topiclink">UFW topic</a> in Other Programs for further details.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">UFW stands for Uncomplicated Firewall. It is a user-friendly command-line tool used to manage firewall rules on Linux systems. UFW provides a simple interface for configuring and managing the net filter firewall, which is built into the Linux kernel. It is designed to make the process of setting up a firewall easier for users who may not be familiar with complex firewall concepts.</p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; background-color: #ffffff;">Raspberry Pi Updates</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">It is critical to keep Raspberry Pi files up-to-date for security reasons. &nbsp;When vulnerabilities are present your system can be hacked. &nbsp;RigPi 4 shows when updates are available on the Raspberry Pi desktop in the upper right corner. &nbsp;Click the update icon to start the process.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-weight: bold; background-color: #ffffff;">Remote RigPi Without Port Forwarding</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">RigPi normally requires ports to be opened on your router because that is the only way for remote browsers to connect to the RigPi server. &nbsp;RigPi uses a web server for radio control and a VoIP server for Mumble. &nbsp;By using a remote server you can forget about opening ports, port forwarding, and the security downsides to running a server on the Internet.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">Real VNC (<a href="https://realvnc.com" target="_blank" class="weblink">realvnc.com</a>) provides the VNC software for the Raspberry Pi. &nbsp;A VNC server is installed that allows you to use VNC Viewer to access the Raspberry Pi desktop. &nbsp;Real VNC also provides a free way to use their server using a Home account limited to 3 computers. &nbsp;You must set up an account with Real VNC, but once that is done, you can connect the server on your Raspberry Pi and any viewers to their server. &nbsp;To establish the necessary connections simplified port forwarding with no knowledge of your Internet IP required.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">In VNC Viewer you can connect to the Raspberry Pi desktop. &nbsp;From there you can run RigPi or any of the digital mode programs.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">You can find full instructions for using VNC on the Real VNC web site.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">The other server running on RigPi that requires port forwarding is the Mumble server for two-way audio. &nbsp;Murmur servers are also available on the Internet for little or no cost. &nbsp;Rather than connect to the server on RigPi, by using a remote server you will not need port forwarding.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">One popular Mumble server service is&nbsp;<a href="https://mumble.com" target="_blank" class="weblink">Mumble.com</a>. &nbsp;If you sign up for a 2-year account the cost is under $4 per month. &nbsp;There are many other servers available (over 55 in the US alone), just check the list in Mumble&gt;Public Servers.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="background-color: #ffffff;">ZeroTier (<a href="https://zerotier.com" target="_blank" class="weblink">https://zerotier.com</a>) is a secure service that eliminates the need for port forwarding in your router. &nbsp;ZeroTier is installed on RigPi.</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    //Hide Print button on touch devices
+    if (hmBrowser.nonDeskTouch) {
+      $("a#printbuttonlink").hide();
+      $("#idnav").css({"width": "125px", "padding-left": "0", "padding-right": "2px"});
+    }
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+
+</script>
+</body>
+</html>

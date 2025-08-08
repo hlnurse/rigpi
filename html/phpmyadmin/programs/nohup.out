@@ -1,0 +1,11 @@
+TEST MODE
+
+Radio: 1<br>User: admin<br>Radio from settings: 1<br>More information is in /var/log/rigpi-radio.log and /var/log/rigpi-rotor.log<br>
+1699041923loop
+
+1 1699041925 tw1: 28130300 
+setting tw to 0
+1699041925
+1699041925here
+Congratulations, xxx is connected!<br><br><b>Main frequency is 28.130.300 MHz</b><br><br>RigDo Processes:<br><br>root     19985  7.0  0.2  81340 20936 pts/0    S+   16:05   0:00 php /var/www/html/RigDo.php admin radio1 4532 1 Main 0<br><br>RigDoPID: 19985; Radio: 1; User: admin; Keyer: wkr; CW Port: /dev/ttyUSB1<br><br>Now starting RigPi CW control link.<br>Now starting RigPi CW Server, radio is 1 and cw is 1.<br>Now starting RigPi TCP server on port 30001.<br>Now starting RigPi UDP Server on port 2333.<br>Now starting RigPi UDP Server on port 2333.<br>Rotor: 1 (Dummy)<br>Rotor port: 4533<br>Rotor ID 1 (Dummy) start attempt.<br>To see any error details, click Disconnect Radio, then start rotctl in Terminal with this line: <br><br><b>rotctl -m 1</b><br><br>rotctld processes running: <br>root     20035  0.0  0.0  13072  7476 pts/0    S+   16:05   0:00 rotctld -m 1 -T 0.0.0.0 -t 4533
+<br><br>Report is complete. Select the text in this report, copy, then paste it to a destination (such as an email).OK
