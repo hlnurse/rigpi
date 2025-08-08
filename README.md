@@ -6,6 +6,8 @@ RigPi uses Hamlib for rig and rotor control. External programs (such as WSJT-X) 
 
 RigPi includes many popular ham programs, including WSJT-X, Fldigi, TQSL, GridSquare and others.
 
+The RigPi HTML code is provided in the HTML folder.  Please test any changes you make in the RigPi image.
+
 The RigPi image is available as a free download.  A release candidate can be downloaded here:
 
 <p align="center">
